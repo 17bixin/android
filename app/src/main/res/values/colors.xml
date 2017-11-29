@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="color_app">#26000000</color>
+
+    <color name="e6_register_start">#e6F0455C</color>
+
+    <color name="register_start">#F0455C</color>
+    <color name="register_end">#F17AFF</color>
+
+    <color name="tel_name_color">#FFFF00</color>
+
+    <color name="translucent_background">#ccFFFFFF</color>
+    <color name="white_66">#66FFFFFF</color>
+
+    <color name="gray">@android:color/darker_gray</color>
+
+
+</resources>

@@ -2,6 +2,7 @@ package com.gestures.heart.camera;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,8 +29,9 @@ public class EffectAndFilterItemView extends LinearLayout {
     }
 
     private void init(Context context) {
-        LayoutParams params = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT,
+        LayoutParams params = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT);
+        params.gravity = Gravity.CENTER_HORIZONTAL;
         setLayoutParams(params);
         View viewRoot = LayoutInflater.from(context).inflate(R.layout.effect_and_filter_item_view,
                 this, true);

@@ -12,6 +12,9 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
 import android.os.Message;
+import android.support.design.widget.BottomSheetBehavior;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -138,6 +141,9 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
     private MainHandler mMainHandler;
     private int mRecordStatus = 0;
     private boolean mBeauty = true;//是否开启美颜
+    private RecyclerView mEffectRecyclerView;
+    private EffectAndFilterSelectAdapter mEffectRecyclerAdapter;
+    private BottomSheetBehavior<View> behavior;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -182,6 +188,21 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
         iv_record_btn.setOnClickListener(this);
         getView(R.id.ivSwitchCamera).setOnClickListener(this);
         getView(R.id.iv_face_btn).setOnClickListener(this);
+        View bottomSheet = findViewById(R.id.bottom_sheet);
+        behavior = BottomSheetBehavior.from(bottomSheet);
+
+        mEffectRecyclerView = getView(R.id.effect_recycle_view);
+        mEffectRecyclerView.setLayoutManager(new GridLayoutManager(getBaseContext(), 4));
+        mEffectRecyclerAdapter = new EffectAndFilterSelectAdapter(mEffectRecyclerView, EffectAndFilterSelectAdapter.RECYCLEVIEW_TYPE_EFFECT);
+        mEffectRecyclerAdapter.setOnItemSelectedListener(new EffectAndFilterSelectAdapter.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(int itemPosition) {
+                Log.d(TAG, "effect item selected " + itemPosition);
+                onEffectItemSelected(EffectAndFilterSelectAdapter.EFFECT_ITEM_FILE_NAME[itemPosition]);
+                //showHintText(mEffectRecyclerAdapter.getHintStringByPosition(itemPosition));
+            }
+        });
+        mEffectRecyclerView.setAdapter(mEffectRecyclerAdapter);
 
         final CommonTabLayout topTabLayout = getView(R.id.layout_record_tab);
         topTabLayout.setTabData(Config.getRecordTabData());
@@ -202,7 +223,7 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()) {
                     case MotionEvent.ACTION_DOWN:
-
+                        onStartRecording();
                         break;
                     case MotionEvent.ACTION_UP:
 
@@ -303,7 +324,11 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
                 onCameraChange();
                 break;
             case R.id.iv_face_btn:
-
+                if(behavior.getState() == BottomSheetBehavior.STATE_EXPANDED) {
+                    behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+                }else {
+                    behavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+                }
                 break;
         }
     }

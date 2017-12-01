@@ -25,6 +25,7 @@
         android:layout_weight="1">
 
         <ImageView
+            android:id="@+id/ivSwitchCamera"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:layout_centerInParent="true"

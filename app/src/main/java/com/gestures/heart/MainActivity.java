@@ -1,13 +1,15 @@
 package com.gestures.heart;
 
+import android.Manifest;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MotionEvent;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ImageView;
 
 import com.gestures.heart.record.ShortVideoRecordActivity;
+import com.github.dfqin.grantor.PermissionListener;
+import com.github.dfqin.grantor.PermissionsUtil;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +17,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        PermissionsUtil.requestPermission(getBaseContext(),
+                new PermissionListener() {
+                    @Override
+                    public void permissionGranted(@NonNull String[] permission) {
+
+                    }
+
+                    @Override
+                    public void permissionDenied(@NonNull String[] permission) {
+
+                    }
+                },
+        new String[]{Manifest.permission.CAMERA,
+                Manifest.permission.READ_EXTERNAL_STORAGE,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                Manifest.permission.RECORD_AUDIO});
 
         findViewById(R.id.tv_video_record).setOnClickListener(new View.OnClickListener() {
             @Override

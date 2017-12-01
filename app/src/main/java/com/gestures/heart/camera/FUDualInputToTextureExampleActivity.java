@@ -1,4 +1,4 @@
-package com.gestures.heart.record;
+package com.gestures.heart.camera;
 
 import android.content.Context;
 import android.graphics.SurfaceTexture;
@@ -7,33 +7,16 @@ import android.opengl.EGL14;
 import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
 import android.os.Message;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.faceunity.wrapper.faceunity;
 import com.gestures.heart.R;
-import com.gestures.heart.base.BaseActivity;
-import com.gestures.heart.base.utils.Config;
-import com.gestures.heart.base.view.CommonPopupWindow;
-import com.gestures.heart.base.view.VideoProgressView;
-import com.gestures.heart.base.view.tab.CommonTabLayout;
-import com.gestures.heart.base.view.tab.listener.OnTabSelectListener;
-import com.gestures.heart.camera.AspectFrameLayout;
-import com.gestures.heart.camera.CameraUtils;
-import com.gestures.heart.camera.EffectAndFilterSelectAdapter;
-import com.gestures.heart.camera.MiscUtil;
-import com.gestures.heart.camera.authpack;
 import com.gestures.heart.camera.encoder.TextureMovieEncoder;
 import com.gestures.heart.camera.gles.CameraClipFrameRect;
 import com.gestures.heart.camera.gles.FullFrameRect;
@@ -53,17 +36,19 @@ import javax.microedition.khronos.opengles.GL10;
 import static com.gestures.heart.camera.encoder.TextureMovieEncoder.IN_RECORDING;
 import static com.gestures.heart.camera.encoder.TextureMovieEncoder.START_RECORDING;
 
-/***
- * 短视频 录制
- * */
-public class ShortVideoRecordActivity extends BaseActivity implements Camera.PreviewCallback,
-        SurfaceTexture.OnFrameAvailableListener, View.OnClickListener {
 
-    private ImageView iv_record_btn;
-    private VideoProgressView progressView;  // 录制进度条
-    private ImageView iv_tool_menu;
-    private LinearLayout layout_record_tool;
+/**
+ * 这个Activity演示了从Camera取数据,用fuDualInputToTexure处理并预览展示
+ * 所谓dual input，指从cpu和gpu同时拿数据，
+ * cpu拿到的是nv21的byte数组，gpu拿到的是对应的texture
+ * <p>
+ * Created by lirui on 2016/12/13.
+ */
 
+@SuppressWarnings("deprecation")
+public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
+        implements Camera.PreviewCallback,
+        SurfaceTexture.OnFrameAvailableListener {
 
     final static String TAG = "FUDualInputToTextureEg";
 
@@ -132,15 +117,9 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
 
     boolean boostBestCameraFPS = false;
 
-
-    final int PREVIEW_BUFFER_COUNT = 3;
-    byte[][] previewCallbackBuffer;
-    private MainHandler mMainHandler;
-    private int mRecordStatus = 0;
-    private boolean mBeauty = true;//是否开启美颜
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.e(TAG, "onCreate");
         super.onCreate(savedInstanceState);
 
         mContext = this;
@@ -156,157 +135,10 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
         mCreateItemThread = new HandlerThread("CreateItemThread");
         mCreateItemThread.start();
         mCreateItemHandler = new CreateItemHandler(mCreateItemThread.getLooper(), mContext);
-
-        initView();
-
     }
 
-    @Override
-    protected int setLayoutID() {
-        return R.layout.activity_short_video_record;
-    }
-
-    private void initView() {
-
-        getView(R.id.iv_back).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
-        iv_record_btn = getView(R.id.iv_record_btn);
-        progressView = getView(R.id.videoProgressView);
-        layout_record_tool = getView(R.id.layout_record_tool);
-
-        iv_record_btn.setOnClickListener(this);
-        getView(R.id.ivSwitchCamera).setOnClickListener(this);
-        getView(R.id.iv_face_btn).setOnClickListener(this);
-
-        final CommonTabLayout topTabLayout = getView(R.id.layout_record_tab);
-        topTabLayout.setTabData(Config.getRecordTabData());
-        topTabLayout.setCurrentTab(0);
-
-        topTabLayout.setOnTabSelectListener(new OnTabSelectListener() {
-            @Override
-            public void onTabSelect(int position) {
-//                mViewPager.setCurrentItem(position);
-            }
-
-            @Override
-            public void onTabReselect(int position) {}
-        });
-
-        iv_record_btn.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getAction()) {
-                    case MotionEvent.ACTION_DOWN:
-
-                        break;
-                    case MotionEvent.ACTION_UP:
-
-                        break;
-                }
-                return true;
-            }
-        });
-
-        initPopupWindow();
-
-    }
-
-    private void initPopupWindow(){
-        final CommonPopupWindow popWin = new CommonPopupWindow(this, R.layout.layout_record_tools_win, 520, ViewGroup.LayoutParams.WRAP_CONTENT) {
-            private ImageView iv_flash_btn, iv_delay_btn, iv_beauty_btn;
-            private TextView tv_flash_text, tv_delay_text, tv_beauty_text;
-            @Override
-            protected void initView() {
-                View view = getContentView();
-
-                iv_flash_btn = view.findViewById(R.id.iv_flash_btn);
-                iv_delay_btn = view.findViewById(R.id.iv_delay_btn);
-                iv_beauty_btn = view.findViewById(R.id.iv_beauty_btn);
-                tv_flash_text = view.findViewById(R.id.tv_flash_text);
-                tv_delay_text = view.findViewById(R.id.tv_delay_text);
-                tv_beauty_text = view.findViewById(R.id.tv_beauty_text);
-            }
-
-            @Override
-            protected void initEvent() {
-                iv_flash_btn.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        // 闪光灯开关
-                    }
-                });
-                iv_delay_btn.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        //延时拍摄
-                        new CountDownTimer(3000,1000){
-
-                            @Override
-                            public void onTick(long l) {
-
-                            }
-
-                            @Override
-                            public void onFinish() {
-                                if (mRecordStatus == 0) {
-                                    onStartRecording();
-                                    mRecordStatus ^= 1;
-                                }else{
-                                    Toast.makeText(ShortVideoRecordActivity.this,"录制中",Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        }.start();
-                    }
-                });
-
-                iv_beauty_btn.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        mBeauty = !mBeauty;
-                    }
-                });
-            }
-        };
-
-        final CommonPopupWindow.LayoutGravity layoutGravity=new CommonPopupWindow.LayoutGravity(
-                CommonPopupWindow.LayoutGravity.ALIGN_LEFT
-                        | CommonPopupWindow.LayoutGravity.TO_BOTTOM);
-        layoutGravity.setHoriGravity(CommonPopupWindow.LayoutGravity.CENTER_HORI);
-
-        iv_tool_menu = getView(R.id.iv_tool_menu);
-        iv_tool_menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                popWin.showBashOfAnchor(iv_tool_menu, layoutGravity, 0, 0);
-            }
-        });
-    }
-
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.iv_record_btn://录制
-                if (mRecordStatus == 0) {
-                    onStartRecording();
-                    mRecordStatus ^= 1;
-                } else {
-                    onStopRecording();
-                    mRecordStatus ^= 1;
-                }
-                break;
-            case R.id.ivSwitchCamera:
-                onCameraChange();
-                break;
-            case R.id.iv_face_btn:
-
-                break;
-        }
-    }
+    final int PREVIEW_BUFFER_COUNT = 3;
+    byte[][] previewCallbackBuffer;
 
     @Override
     protected void onResume() {
@@ -428,8 +260,6 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
     long lastOneHundredFrameTimeStamp = 0;
     int currentFrameCnt = 0;
     long oneHundredFrameFUTime = 0;
-
-
 
     class GLRenderer implements GLSurfaceView.Renderer {
 
@@ -591,12 +421,10 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
                     @Override
                     public void run() {
                         if (isTracking == 0) {
-                            //TODO comment
-//                            mFaceTrackingStatusImageView.setVisibility(View.VISIBLE);
+                            mFaceTrackingStatusImageView.setVisibility(View.VISIBLE);
                             Arrays.fill(landmarksData, 0);
                         } else {
-                            //TODO comment
-//                            mFaceTrackingStatusImageView.setVisibility(View.INVISIBLE);
+                            mFaceTrackingStatusImageView.setVisibility(View.INVISIBLE);
                         }
                     }
                 });
@@ -613,8 +441,7 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
                     @Override
                     public void run() {
                         Log.e(TAG, "system error " + systemError + " " + faceunity.fuGetSystemErrorString(systemError));
-                        //TODO comment
-//                        tvSystemError.setText(faceunity.fuGetSystemErrorString(systemError));
+                        tvSystemError.setText(faceunity.fuGetSystemErrorString(systemError));
                     }
                 });
             }
@@ -624,26 +451,14 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
                 mCreateItemHandler.sendEmptyMessage(CreateItemHandler.HANDLE_CREATE_ITEM);
             }
 
-            if(mBeauty){
-                faceunity.fuItemSetParam(mFaceBeautyItem, "color_level", mFaceBeautyColorLevel);
-                faceunity.fuItemSetParam(mFaceBeautyItem, "blur_level", mFaceBeautyBlurLevel);
-                faceunity.fuItemSetParam(mFaceBeautyItem, "filter_name", mFilterName);
-                faceunity.fuItemSetParam(mFaceBeautyItem, "cheek_thinning", mFaceBeautyCheekThin);
-                faceunity.fuItemSetParam(mFaceBeautyItem, "eye_enlarging", mFaceBeautyEnlargeEye);
-                faceunity.fuItemSetParam(mFaceBeautyItem, "face_shape", mFaceShape);
-                faceunity.fuItemSetParam(mFaceBeautyItem, "face_shape_level", mFaceShapeLevel);
-                faceunity.fuItemSetParam(mFaceBeautyItem, "red_level", mFaceBeautyRedLevel);
-            }else{
-                faceunity.fuItemSetParam(mFaceBeautyItem, "color_level", 0);
-                faceunity.fuItemSetParam(mFaceBeautyItem, "blur_level", 0);
-                faceunity.fuItemSetParam(mFaceBeautyItem, "filter_name", 0);
-                faceunity.fuItemSetParam(mFaceBeautyItem, "cheek_thinning", 0);
-                faceunity.fuItemSetParam(mFaceBeautyItem, "eye_enlarging", 0);
-                faceunity.fuItemSetParam(mFaceBeautyItem, "face_shape", 0);
-                faceunity.fuItemSetParam(mFaceBeautyItem, "face_shape_level", 0);
-                faceunity.fuItemSetParam(mFaceBeautyItem, "red_level", 0);
-            }
-
+            faceunity.fuItemSetParam(mFaceBeautyItem, "color_level", mFaceBeautyColorLevel);
+            faceunity.fuItemSetParam(mFaceBeautyItem, "blur_level", mFaceBeautyBlurLevel);
+            faceunity.fuItemSetParam(mFaceBeautyItem, "filter_name", mFilterName);
+            faceunity.fuItemSetParam(mFaceBeautyItem, "cheek_thinning", mFaceBeautyCheekThin);
+            faceunity.fuItemSetParam(mFaceBeautyItem, "eye_enlarging", mFaceBeautyEnlargeEye);
+            faceunity.fuItemSetParam(mFaceBeautyItem, "face_shape", mFaceShape);
+            faceunity.fuItemSetParam(mFaceBeautyItem, "face_shape_level", mFaceShapeLevel);
+            faceunity.fuItemSetParam(mFaceBeautyItem, "red_level", mFaceBeautyRedLevel);
 
             //faceunity.fuItemSetParam(mFaceBeautyItem, "use_old_blur", 1);
 
@@ -711,8 +526,7 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
                             @Override
                             public void run() {
                                 Log.e(TAG, "start encoder success");
-                                //TODO comment
-//                                mRecordingBtn.setVisibility(View.VISIBLE);
+                                mRecordingBtn.setVisibility(View.VISIBLE);
                             }
                         });
                     }
@@ -723,8 +537,7 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
                             @Override
                             public void run() {
                                 Log.e(TAG, "stop encoder success");
-                                //TODO comment
-//                                mRecordingBtn.setVisibility(View.VISIBLE);
+                                mRecordingBtn.setVisibility(View.VISIBLE);
                             }
                         });
                     }
@@ -733,7 +546,7 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(ShortVideoRecordActivity.this, "video file saved to "
+                        Toast.makeText(FUDualInputToTextureExampleActivity.this, "video file saved to "
                                 + videoFileName, Toast.LENGTH_SHORT).show();
                     }
                 });
@@ -754,8 +567,7 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        //TODO comment
-//                        mRecordingBtn.performClick();
+                        mRecordingBtn.performClick();
                     }
                 });
             }
@@ -787,16 +599,16 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
 
         static final int HANDLE_CAMERA_START_PREVIEW = 1;
 
-        private WeakReference<ShortVideoRecordActivity> mActivityWeakReference;
+        private WeakReference<FUDualInputToTextureExampleActivity> mActivityWeakReference;
 
-        MainHandler(ShortVideoRecordActivity activity) {
+        MainHandler(FUDualInputToTextureExampleActivity activity) {
             mActivityWeakReference = new WeakReference<>(activity);
         }
 
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
-            ShortVideoRecordActivity activity = mActivityWeakReference.get();
+            FUDualInputToTextureExampleActivity activity = mActivityWeakReference.get();
             switch (msg.what) {
                 case HANDLE_CAMERA_START_PREVIEW:
                     Log.e(TAG, "HANDLE_CAMERA_START_PREVIEW");
@@ -836,7 +648,7 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
                             itemsArray[1] = mEffectItem = faceunity.fuCreateItemFromPackage(itemData);
                             faceunity.fuItemSetParam(mEffectItem, "isAndroid", 1.0);
                             faceunity.fuItemSetParam(mEffectItem, "rotationAngle",
-                                    ((ShortVideoRecordActivity) mContext.get()).getCurrentCameraType()
+                                    ((FUDualInputToTextureExampleActivity) mContext.get()).getCurrentCameraType()
                                             == Camera.CameraInfo.CAMERA_FACING_FRONT ? 90 : 270);
                             if (tmp != 0) {
                                 faceunity.fuDestroyItem(tmp);
@@ -876,7 +688,7 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    Toast.makeText(ShortVideoRecordActivity.this,
+                    Toast.makeText(FUDualInputToTextureExampleActivity.this,
                             "Open Camera Failed! Make sure it is not locked!", Toast.LENGTH_SHORT)
                             .show();
                 }
@@ -923,6 +735,7 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
         }
     }
 
+    @Override
     protected void onBlurLevelSelected(int level) {
         switch (level) {
             case 0:
@@ -949,14 +762,17 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
         }
     }
 
+    @Override
     protected void onCheekThinSelected(int progress, int max) {
         mFaceBeautyCheekThin = 1.0f * progress / max;
     }
 
+    @Override
     protected void onColorLevelSelected(int progress, int max) {
         mFaceBeautyColorLevel = 1.0f * progress / max;
     }
 
+    @Override
     protected void onEffectItemSelected(String effectItemName) {
         if (effectItemName.equals(mEffectFileName)) {
             return;
@@ -967,18 +783,22 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
         isNeedEffectItem = true;
     }
 
+    @Override
     protected void onEnlargeEyeSelected(int progress, int max) {
         mFaceBeautyEnlargeEye = 1.0f * progress / max;
     }
 
+    @Override
     protected void onFilterSelected(String filterName) {
         mFilterName = filterName;
     }
 
+    @Override
     protected void onRedLevelSelected(int progress, int max) {
         mFaceBeautyRedLevel = 1.0f * progress / max;
     }
 
+    @Override
     protected void onCameraChange() {
         Log.e(TAG, "onCameraChange");
         synchronized (prepareCameraDataLock) {
@@ -1000,11 +820,13 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
         }
     }
 
+    @Override
     protected void onStartRecording() {
         MiscUtil.Logger(TAG, "start recording", false);
         mTextureMovieEncoder = new TextureMovieEncoder();
     }
 
+    @Override
     protected void onStopRecording() {
         if (mTextureMovieEncoder != null && mTextureMovieEncoder.checkRecordingStatus(IN_RECORDING)) {
             MiscUtil.Logger(TAG, "stop recording", false);
@@ -1012,10 +834,12 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
         }
     }
 
+    @Override
     protected void onFaceShapeLevelSelected(int progress, int max) {
         mFaceShapeLevel = (1.0f * progress) / max;
     }
 
+    @Override
     protected void onFaceShapeSelected(int faceShape) {
         mFaceShape = faceShape;
     }
@@ -1030,6 +854,4 @@ public class ShortVideoRecordActivity extends BaseActivity implements Camera.Pre
         mCreateItemThread = null;
         mCreateItemHandler = null;
     }
-
-
 }

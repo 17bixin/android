@@ -20,8 +20,10 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1">
+
+        <!-- btn_recording -->
         <ImageView
-            android:id="@+id/iv_record_btn"
+            android:id="@+id/ivRecord"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_centerInParent="true"

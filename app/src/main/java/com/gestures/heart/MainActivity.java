@@ -7,7 +7,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.gestures.heart.record.ShortVideoRecordActivity;
+import com.gestures.heart.record.FUDualInputToTextureExampleActivity;
 import com.github.dfqin.grantor.PermissionListener;
 import com.github.dfqin.grantor.PermissionsUtil;
 
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.tv_video_record).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ShortVideoRecordActivity.class));
+                startActivity(new Intent(MainActivity.this, FUDualInputToTextureExampleActivity.class));
             }
         });
     }

@@ -50,7 +50,7 @@ public class EffectAndFilterSelectAdapter extends RecyclerView.Adapter<EffectAnd
                 FILTER_ITEM_RES_ARRAY.length;
     }
 
-    String getHintStringByPosition(int position) {
+    public String getHintStringByPosition(int position) {
         String res = "";
         switch (EFFECT_ITEM_RES_ARRAY[position]) {
             case R.mipmap.mood:

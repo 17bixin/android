@@ -1,33 +1,53 @@
-package com.gestures.heart.camera;
+package com.gestures.heart.record;
 
 import android.content.Context;
+import android.content.pm.FeatureInfo;
+import android.content.pm.PackageManager;
 import android.graphics.SurfaceTexture;
 import android.hardware.Camera;
+import android.hardware.camera2.CameraManager;
 import android.opengl.EGL14;
 import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
 import android.os.Message;
+import android.support.design.widget.BottomSheetBehavior;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.faceunity.wrapper.faceunity;
 import com.gestures.heart.R;
+import com.gestures.heart.base.utils.Config;
+import com.gestures.heart.base.view.CommonPopupWindow;
+import com.gestures.heart.base.view.tab.CommonTabLayout;
+import com.gestures.heart.base.view.tab.listener.OnTabSelectListener;
+import com.gestures.heart.camera.AspectFrameLayout;
+import com.gestures.heart.camera.CameraUtils;
+import com.gestures.heart.camera.EffectAndFilterSelectAdapter;
+import com.gestures.heart.camera.MiscUtil;
+import com.gestures.heart.camera.authpack;
 import com.gestures.heart.camera.encoder.TextureMovieEncoder;
 import com.gestures.heart.camera.gles.CameraClipFrameRect;
 import com.gestures.heart.camera.gles.FullFrameRect;
 import com.gestures.heart.camera.gles.LandmarksPoints;
 import com.gestures.heart.camera.gles.Texture2dProgram;
+import com.gestures.heart.util.VideoUtils;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.ref.WeakReference;
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.microedition.khronos.egl.EGLConfig;
@@ -117,6 +137,18 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
 
     boolean boostBestCameraFPS = false;
 
+
+    private BottomSheetBehavior<View> behavior;
+
+
+    private CameraManager mCameraManager;
+
+
+    private boolean mLightStatus = false;
+    private int mRecordStatus = 0;
+    private boolean mBeauty = true;//是否开启美颜
+    private View ivToolMenu;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.e(TAG, "onCreate");
@@ -135,6 +167,146 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
         mCreateItemThread = new HandlerThread("CreateItemThread");
         mCreateItemThread.start();
         mCreateItemHandler = new CreateItemHandler(mCreateItemThread.getLooper(), mContext);
+
+        initView();
+    }
+
+
+    private void initView() {
+
+        findViewById(R.id.iv_back).setOnClickListener(this);
+        findViewById(R.id.ivSwitchCamera).setOnClickListener(this);
+
+        View bottomSheet = findViewById(R.id.bottom_sheet);
+        behavior = BottomSheetBehavior.from(bottomSheet);
+
+
+        findViewById(R.id.tvNext).setOnClickListener(this);
+        findViewById(R.id.ivSwitchCamera).setOnClickListener(this);
+        findViewById(R.id.iv_face_btn).setOnClickListener(this);
+
+
+        final CommonTabLayout topTabLayout = findViewById(R.id.layout_record_tab);
+        topTabLayout.setTabData(Config.getRecordTabData());
+        topTabLayout.setCurrentTab(0);
+
+        topTabLayout.setOnTabSelectListener(new OnTabSelectListener() {
+            @Override
+            public void onTabSelect(int position) {
+//                mViewPager.setCurrentItem(position);
+            }
+
+            @Override
+            public void onTabReselect(int position) {}
+        });
+
+
+        initPopupWindow();
+
+    }
+
+    private void initPopupWindow(){
+        final CommonPopupWindow popWin = new CommonPopupWindow(this, R.layout.layout_record_tools_win, 520, ViewGroup.LayoutParams.WRAP_CONTENT) {
+            private ImageView iv_flash_btn, iv_delay_btn, iv_beauty_btn;
+            private TextView tv_flash_text, tv_delay_text, tv_beauty_text;
+            @Override
+            protected void initView() {
+                View view = getContentView();
+
+                iv_flash_btn = view.findViewById(R.id.iv_flash_btn);
+                iv_delay_btn = view.findViewById(R.id.iv_delay_btn);
+                iv_beauty_btn = view.findViewById(R.id.iv_beauty_btn);
+                tv_flash_text = view.findViewById(R.id.tv_flash_text);
+                tv_delay_text = view.findViewById(R.id.tv_delay_text);
+                tv_beauty_text = view.findViewById(R.id.tv_beauty_text);
+            }
+
+            @Override
+            protected void initEvent() {
+                iv_flash_btn.setOnClickListener(new View.OnClickListener() {
+
+
+
+                    @Override
+                    public void onClick(View v) {
+                        // 闪光灯开关
+                        lightSwitch(mLightStatus);
+                        mLightStatus = !mLightStatus;
+                    }
+                });
+                iv_delay_btn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        //延时拍摄
+                        new CountDownTimer(3000,1000){
+
+                            @Override
+                            public void onTick(long l) {
+
+                            }
+
+                            @Override
+                            public void onFinish() {
+                                if (mRecordStatus == 0) {
+                                    onStartRecording();
+                                    mRecordStatus ^= 1;
+                                }else{
+                                    Toast.makeText(FUDualInputToTextureExampleActivity.this,"录制中",Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        }.start();
+                    }
+                });
+
+                iv_beauty_btn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        mBeauty = !mBeauty;
+                    }
+                });
+            }
+        };
+
+        final CommonPopupWindow.LayoutGravity layoutGravity=new CommonPopupWindow.LayoutGravity(
+                CommonPopupWindow.LayoutGravity.ALIGN_LEFT
+                        | CommonPopupWindow.LayoutGravity.TO_BOTTOM);
+        layoutGravity.setHoriGravity(CommonPopupWindow.LayoutGravity.CENTER_HORI);
+
+        ivToolMenu = findViewById(R.id.iv_tool_menu);
+        ivToolMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                popWin.showBashOfAnchor(ivToolMenu, layoutGravity, 0, 0);
+            }
+        });
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.iv_back:
+                finish();
+                break;
+            case R.id.ivSwitchCamera:
+                onCameraChange();
+                break;
+            case R.id.iv_face_btn:
+                if(behavior.getState() == BottomSheetBehavior.STATE_EXPANDED) {
+                    behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+                }else {
+                    behavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+                }
+                break;
+            case R.id.tvNext:
+                String input1 = Environment.getExternalStorageDirectory()+"/input1.mp4";
+                String input2 = Environment.getExternalStorageDirectory()+"/input2.mp4";
+                String output = Environment.getExternalStorageDirectory()+"/zz_output.mp4";
+                List<String> videos = new ArrayList<>();
+                videos.add(input1);
+                videos.add(input2);
+                VideoUtils.merge(videos, output);
+                break;
+        }
     }
 
     final int PREVIEW_BUFFER_COUNT = 3;
@@ -416,20 +588,22 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
             } else throw new RuntimeException("HOW COULD IT HAPPEN!!! mCameraSurfaceTexture is null!!!");
 
             final int isTracking = faceunity.fuIsTracking();
-            if (isTracking != faceTrackingStatus) {
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        if (isTracking == 0) {
-                            mFaceTrackingStatusImageView.setVisibility(View.VISIBLE);
-                            Arrays.fill(landmarksData, 0);
-                        } else {
-                            mFaceTrackingStatusImageView.setVisibility(View.INVISIBLE);
-                        }
-                    }
-                });
-                faceTrackingStatus = isTracking;
-            }
+
+            //TODO comment
+//            if (isTracking != faceTrackingStatus) {
+//                runOnUiThread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        if (isTracking == 0) {
+//                            mFaceTrackingStatusImageView.setVisibility(View.VISIBLE);
+//                            Arrays.fill(landmarksData, 0);
+//                        } else {
+//                            mFaceTrackingStatusImageView.setVisibility(View.INVISIBLE);
+//                        }
+//                    }
+//                });
+//                faceTrackingStatus = isTracking;
+//            }
             if (VERBOSE_LOG) {
                 Log.e(TAG, "isTracking " + isTracking);
             }
@@ -441,7 +615,8 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
                     @Override
                     public void run() {
                         Log.e(TAG, "system error " + systemError + " " + faceunity.fuGetSystemErrorString(systemError));
-                        tvSystemError.setText(faceunity.fuGetSystemErrorString(systemError));
+                        //TODO comment
+//                        tvSystemError.setText(faceunity.fuGetSystemErrorString(systemError));
                     }
                 });
             }
@@ -735,42 +910,6 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
         }
     }
 
-    @Override
-    protected void onBlurLevelSelected(int level) {
-        switch (level) {
-            case 0:
-                mFaceBeautyBlurLevel = 0;
-                break;
-            case 1:
-                mFaceBeautyBlurLevel = 1.0f;
-                break;
-            case 2:
-                mFaceBeautyBlurLevel = 2.0f;
-                break;
-            case 3:
-                mFaceBeautyBlurLevel = 3.0f;
-                break;
-            case 4:
-                mFaceBeautyBlurLevel = 4.0f;
-                break;
-            case 5:
-                mFaceBeautyBlurLevel = 5.0f;
-                break;
-            case 6:
-                mFaceBeautyBlurLevel = 6.0f;
-                break;
-        }
-    }
-
-    @Override
-    protected void onCheekThinSelected(int progress, int max) {
-        mFaceBeautyCheekThin = 1.0f * progress / max;
-    }
-
-    @Override
-    protected void onColorLevelSelected(int progress, int max) {
-        mFaceBeautyColorLevel = 1.0f * progress / max;
-    }
 
     @Override
     protected void onEffectItemSelected(String effectItemName) {
@@ -783,20 +922,6 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
         isNeedEffectItem = true;
     }
 
-    @Override
-    protected void onEnlargeEyeSelected(int progress, int max) {
-        mFaceBeautyEnlargeEye = 1.0f * progress / max;
-    }
-
-    @Override
-    protected void onFilterSelected(String filterName) {
-        mFilterName = filterName;
-    }
-
-    @Override
-    protected void onRedLevelSelected(int progress, int max) {
-        mFaceBeautyRedLevel = 1.0f * progress / max;
-    }
 
     @Override
     protected void onCameraChange() {
@@ -834,15 +959,6 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
         }
     }
 
-    @Override
-    protected void onFaceShapeLevelSelected(int progress, int max) {
-        mFaceShapeLevel = (1.0f * progress) / max;
-    }
-
-    @Override
-    protected void onFaceShapeSelected(int faceShape) {
-        mFaceShape = faceShape;
-    }
 
     @Override
     protected void onDestroy() {
@@ -854,4 +970,54 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
         mCreateItemThread = null;
         mCreateItemHandler = null;
     }
+
+    /**
+     * 手电筒控制方法
+     *
+     * @param lightStatus
+     * @return
+     */
+    private void lightSwitch(final boolean lightStatus) {
+        if(mCameraManager == null){
+            mCameraManager = (CameraManager) getSystemService(Context.CAMERA_SERVICE);
+        }
+        if (lightStatus) { // 关闭手电筒
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                try {
+                    mCameraManager.setTorchMode("0", false);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            } else {
+                if (mCamera != null) {
+                    mCamera.stopPreview();
+                    mCamera.release();
+                    mCamera = null;
+                }
+            }
+        } else { // 打开手电筒
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                try {
+                    mCameraManager.setTorchMode("0", true);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            } else {
+                final PackageManager pm = getPackageManager();
+                final FeatureInfo[] features = pm.getSystemAvailableFeatures();
+                for (final FeatureInfo f : features) {
+                    if (PackageManager.FEATURE_CAMERA_FLASH.equals(f.name)) { // 判断设备是否支持闪光灯
+                        if (null == mCamera) {
+                            mCamera = Camera.open();
+                        }
+                        final Camera.Parameters parameters = mCamera.getParameters();
+                        parameters.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
+                        mCamera.setParameters(parameters);
+                        mCamera.startPreview();
+                    }
+                }
+            }
+        }
+    }
+
 }

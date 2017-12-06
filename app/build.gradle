@@ -29,4 +29,5 @@ dependencies {
     compile 'com.android.support:design:26.+'
     compile 'org.adw.library:discrete-seekbar:1.0.1'
     compile 'com.github.dfqin:grantor:2.4'
+    compile 'com.googlecode.mp4parser:isoparser:1.1.21'
 }

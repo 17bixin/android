@@ -24,15 +24,15 @@ import java.util.List;
 
 public class VideoUtils {
 
-    private Calendar mCalendar = Calendar.getInstance();
-    private SimpleDateFormat mDateFormat = new SimpleDateFormat("yyyyMMdd-kkmmss-SSS");
+    private static Calendar mCalendar = Calendar.getInstance();
+    private static SimpleDateFormat mDateFormat = new SimpleDateFormat("yyyyMMdd-kkmmss-SSS");
 
     /**
      *
      * @param videosToMerge 需要合并的视频的路径集合
-     * @param output   输出的视频
+     * @param outputFile   输出的视频
      */
-    public static void merge(List<String> videosToMerge, String output){
+    public static void merge(List<String> videosToMerge, String outputFile){
         int count = videosToMerge.size();
         try {
             Movie[] inMovies = new Movie[count];
@@ -73,7 +73,7 @@ public class VideoUtils {
 
 
             //开始生产mp4文件
-            FileOutputStream fos =  new FileOutputStream(new File(output));
+            FileOutputStream fos =  new FileOutputStream(new File(outputFile));
             FileChannel fco = fos.getChannel();
             mp4file.writeContainer(fco);
             fco.close();
@@ -91,8 +91,8 @@ public class VideoUtils {
      *
      * @return
      */
-    private String generateTimeString4OutputName() {
-        return "SoloVideo-" + mDateFormat.format(mCalendar.getTime());
+    private static String generateTimeString4OutputName() {
+        return "GH-" + mDateFormat.format(mCalendar.getTime());
     }
 
     /**
@@ -101,21 +101,49 @@ public class VideoUtils {
      * @param outputPath
      * @return
      */
-    private String generateOutputFile4Video( String outputPath) {
+    public static String createTempOutputFile4Video(String outputPath, int index) {
+
+        File outputPathFile = new File(outputPath);
+        if(!outputPathFile.exists()){
+            outputPathFile.mkdirs();
+        }
+
         StringBuilder outputFileStr = new StringBuilder();
             outputFileStr.append(outputPath)
                     .append("/")
                     .append(generateTimeString4OutputName())
+                    .append("_idx_")
+                    .append(index)
                     .append(".mp4");
 
         File outputFile = new File(outputFileStr.toString());
-        for (int i = 0; outputFile.exists(); i++) {
-            if (i != 0) {
-                outputFileStr.delete(outputFileStr.lastIndexOf("-"), outputFileStr.lastIndexOf("."));
-            }
-            outputFileStr.insert(outputFileStr.lastIndexOf("."), "-" + i);
-            outputFile = new File(outputFileStr.toString());
+        if(outputFile.exists()){
+            outputFile.delete();
         }
+
+
+        return outputFileStr.toString();
+    }
+
+    public static String createOutputFile4Video(String outputPath) {
+
+        File outputPathFile = new File(outputPath);
+        if(!outputPathFile.exists()){
+            outputPathFile.mkdirs();
+        }
+
+        StringBuilder outputFileStr = new StringBuilder();
+        outputFileStr.append(outputPath)
+                .append("/")
+                .append(generateTimeString4OutputName())
+                .append(".mp4");
+
+        File outputFile = new File(outputFileStr.toString());
+        if(outputFile.exists()){
+            outputFile.delete();
+        }
+
+
         return outputFileStr.toString();
     }
 }

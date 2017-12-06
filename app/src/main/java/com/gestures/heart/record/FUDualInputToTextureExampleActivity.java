@@ -12,15 +12,18 @@ import android.opengl.GLSurfaceView;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.os.Environment;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
 import android.os.Message;
 import android.support.design.widget.BottomSheetBehavior;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,6 +32,7 @@ import com.faceunity.wrapper.faceunity;
 import com.gestures.heart.R;
 import com.gestures.heart.base.utils.Config;
 import com.gestures.heart.base.view.CommonPopupWindow;
+import com.gestures.heart.base.view.VideoProgressView;
 import com.gestures.heart.base.view.tab.CommonTabLayout;
 import com.gestures.heart.base.view.tab.listener.OnTabSelectListener;
 import com.gestures.heart.camera.AspectFrameLayout;
@@ -41,6 +45,8 @@ import com.gestures.heart.camera.gles.CameraClipFrameRect;
 import com.gestures.heart.camera.gles.FullFrameRect;
 import com.gestures.heart.camera.gles.LandmarksPoints;
 import com.gestures.heart.camera.gles.Texture2dProgram;
+import com.gestures.heart.util.Constants;
+import com.gestures.heart.util.FileUtils;
 import com.gestures.heart.util.VideoUtils;
 
 import java.io.File;
@@ -66,9 +72,9 @@ import static com.gestures.heart.camera.encoder.TextureMovieEncoder.START_RECORD
  */
 
 @SuppressWarnings("deprecation")
-public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
+public class FUDualInputToTextureExampleActivity extends AppCompatActivity
         implements Camera.PreviewCallback,
-        SurfaceTexture.OnFrameAvailableListener {
+        SurfaceTexture.OnFrameAvailableListener, View.OnClickListener {
 
     final static String TAG = "FUDualInputToTextureEg";
 
@@ -119,7 +125,6 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
     boolean isNeedSwitchCameraSurfaceTexture = true;
 
     TextureMovieEncoder mTextureMovieEncoder;
-    String videoFileName;
 
     boolean mUseGesture = false;
 
@@ -138,8 +143,10 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
     boolean boostBestCameraFPS = false;
 
 
+    private RecyclerView mEffectRecyclerView;
+    private EffectAndFilterSelectAdapter mEffectRecyclerAdapter;
     private BottomSheetBehavior<View> behavior;
-
+    protected ImageView ivRecord;
 
     private CameraManager mCameraManager;
 
@@ -148,11 +155,28 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
     private int mRecordStatus = 0;
     private boolean mBeauty = true;//是否开启美颜
     private View ivToolMenu;
+    private MainHandler mMainHandler;
+    private RecordData mRecordData;
+    private final int MAX_RECORD_DURATION = 15000;//最大录制15000毫秒
+    private long mStartTime;//单位ms
+    private long mStopTime;//单位ms
+    private long mCurrentTime;//单位ms
+    private long mCurrentTotalDuration;//单位ms
+    private String mCurrentVideo;
+    private List<String> mVideoList;
+    private VideoProgressView videoProgressView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.e(TAG, "onCreate");
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_camera_base);
+
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        WindowManager.LayoutParams params = getWindow().getAttributes();
+        params.screenBrightness = 0.7f;
+        getWindow().setAttributes(params);
 
         mContext = this;
 
@@ -168,25 +192,50 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
         mCreateItemThread.start();
         mCreateItemHandler = new CreateItemHandler(mCreateItemThread.getLooper(), mContext);
 
+        initData();
         initView();
+    }
+
+    private void initData() {
+        mRecordData = new RecordData();
+        mVideoList = new ArrayList<>();
     }
 
 
     private void initView() {
+        //进度
+        videoProgressView = (VideoProgressView) findViewById(R.id.videoProgressView);
+        videoProgressView.setMaxRecordTime(MAX_RECORD_DURATION);
 
+        //顶部菜单
         findViewById(R.id.iv_back).setOnClickListener(this);
         findViewById(R.id.ivSwitchCamera).setOnClickListener(this);
+        findViewById(R.id.tvNext).setOnClickListener(this);
 
+
+        //贴纸
+        mEffectRecyclerView = (RecyclerView) findViewById(R.id.effect_recycle_view);
+        mEffectRecyclerView.setLayoutManager(new GridLayoutManager(getBaseContext(), 4));
+        mEffectRecyclerAdapter = new EffectAndFilterSelectAdapter(mEffectRecyclerView, EffectAndFilterSelectAdapter.RECYCLEVIEW_TYPE_EFFECT);
+        mEffectRecyclerAdapter.setOnItemSelectedListener(new EffectAndFilterSelectAdapter.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(int itemPosition) {
+                Log.d(TAG, "effect item selected " + itemPosition);
+                onEffectItemSelected(EffectAndFilterSelectAdapter.EFFECT_ITEM_FILE_NAME[itemPosition]);
+                //showHintText(mEffectRecyclerAdapter.getHintStringByPosition(itemPosition));
+            }
+        });
+        mEffectRecyclerView.setAdapter(mEffectRecyclerAdapter);
+
+        //底部按钮
+        findViewById(R.id.iv_face_btn).setOnClickListener(this);
+        ivRecord = (ImageView) findViewById(R.id.ivRecord);
+        ivRecord.setOnClickListener(this);
         View bottomSheet = findViewById(R.id.bottom_sheet);
         behavior = BottomSheetBehavior.from(bottomSheet);
 
 
-        findViewById(R.id.tvNext).setOnClickListener(this);
-        findViewById(R.id.ivSwitchCamera).setOnClickListener(this);
-        findViewById(R.id.iv_face_btn).setOnClickListener(this);
-
-
-        final CommonTabLayout topTabLayout = findViewById(R.id.layout_record_tab);
+        final CommonTabLayout topTabLayout = (CommonTabLayout) findViewById(R.id.layout_record_tab);
         topTabLayout.setTabData(Config.getRecordTabData());
         topTabLayout.setCurrentTab(0);
 
@@ -248,7 +297,7 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
                             @Override
                             public void onFinish() {
                                 if (mRecordStatus == 0) {
-                                    onStartRecording();
+                                    onStartRecording(mRecordData);
                                     mRecordStatus ^= 1;
                                 }else{
                                     Toast.makeText(FUDualInputToTextureExampleActivity.this,"录制中",Toast.LENGTH_SHORT).show();
@@ -290,6 +339,9 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
             case R.id.ivSwitchCamera:
                 onCameraChange();
                 break;
+            case R.id.tvNext:
+                VideoUtils.merge(mVideoList, VideoUtils.createOutputFile4Video(Constants.OUTPUT_PATH));
+                break;
             case R.id.iv_face_btn:
                 if(behavior.getState() == BottomSheetBehavior.STATE_EXPANDED) {
                     behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
@@ -297,15 +349,17 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
                     behavior.setState(BottomSheetBehavior.STATE_EXPANDED);
                 }
                 break;
-            case R.id.tvNext:
-                String input1 = Environment.getExternalStorageDirectory()+"/input1.mp4";
-                String input2 = Environment.getExternalStorageDirectory()+"/input2.mp4";
-                String output = Environment.getExternalStorageDirectory()+"/zz_output.mp4";
-                List<String> videos = new ArrayList<>();
-                videos.add(input1);
-                videos.add(input2);
-                VideoUtils.merge(videos, output);
+            case R.id.ivRecord:
+                if (mRecordStatus == 0) {
+                    onStartRecording(mRecordData);
+                    mRecordStatus ^= 1;
+
+                } else {
+                    onStopRecording(mRecordData);
+                    mRecordStatus ^= 1;
+                }
                 break;
+
         }
     }
 
@@ -626,14 +680,25 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
                 mCreateItemHandler.sendEmptyMessage(CreateItemHandler.HANDLE_CREATE_ITEM);
             }
 
-            faceunity.fuItemSetParam(mFaceBeautyItem, "color_level", mFaceBeautyColorLevel);
-            faceunity.fuItemSetParam(mFaceBeautyItem, "blur_level", mFaceBeautyBlurLevel);
-            faceunity.fuItemSetParam(mFaceBeautyItem, "filter_name", mFilterName);
-            faceunity.fuItemSetParam(mFaceBeautyItem, "cheek_thinning", mFaceBeautyCheekThin);
-            faceunity.fuItemSetParam(mFaceBeautyItem, "eye_enlarging", mFaceBeautyEnlargeEye);
-            faceunity.fuItemSetParam(mFaceBeautyItem, "face_shape", mFaceShape);
-            faceunity.fuItemSetParam(mFaceBeautyItem, "face_shape_level", mFaceShapeLevel);
-            faceunity.fuItemSetParam(mFaceBeautyItem, "red_level", mFaceBeautyRedLevel);
+            if(mBeauty){
+                faceunity.fuItemSetParam(mFaceBeautyItem, "color_level", mFaceBeautyColorLevel);
+                faceunity.fuItemSetParam(mFaceBeautyItem, "blur_level", mFaceBeautyBlurLevel);
+                faceunity.fuItemSetParam(mFaceBeautyItem, "filter_name", mFilterName);
+                faceunity.fuItemSetParam(mFaceBeautyItem, "cheek_thinning", mFaceBeautyCheekThin);
+                faceunity.fuItemSetParam(mFaceBeautyItem, "eye_enlarging", mFaceBeautyEnlargeEye);
+                faceunity.fuItemSetParam(mFaceBeautyItem, "face_shape", mFaceShape);
+                faceunity.fuItemSetParam(mFaceBeautyItem, "face_shape_level", mFaceShapeLevel);
+                faceunity.fuItemSetParam(mFaceBeautyItem, "red_level", mFaceBeautyRedLevel);
+            }else{
+                faceunity.fuItemSetParam(mFaceBeautyItem, "color_level", 0);
+                faceunity.fuItemSetParam(mFaceBeautyItem, "blur_level", 0);
+                faceunity.fuItemSetParam(mFaceBeautyItem, "filter_name", 0);
+                faceunity.fuItemSetParam(mFaceBeautyItem, "cheek_thinning", 0);
+                faceunity.fuItemSetParam(mFaceBeautyItem, "eye_enlarging", 0);
+                faceunity.fuItemSetParam(mFaceBeautyItem, "face_shape", 0);
+                faceunity.fuItemSetParam(mFaceBeautyItem, "face_shape_level", 0);
+                faceunity.fuItemSetParam(mFaceBeautyItem, "red_level", 0);
+            }
 
             //faceunity.fuItemSetParam(mFaceBeautyItem, "use_old_blur", 1);
 
@@ -686,8 +751,9 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
             }
 
             if (mTextureMovieEncoder != null && mTextureMovieEncoder.checkRecordingStatus(START_RECORDING)) {
-                videoFileName = MiscUtil.createFileName() + "_camera.mp4";
-                File outFile = new File(videoFileName);
+
+                mCurrentVideo = VideoUtils.createTempOutputFile4Video(Constants.OUTPUT_PATH_TEMP, mRecordData.currentVideoIndex);
+                File outFile = new File(mCurrentVideo);
                 mTextureMovieEncoder.startRecording(new TextureMovieEncoder.EncoderConfig(
                         outFile, cameraHeight, cameraWidth,
                         3000000, EGL14.eglGetCurrentContext(), mCameraSurfaceTexture.getTimestamp()
@@ -701,7 +767,8 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
                             @Override
                             public void run() {
                                 Log.e(TAG, "start encoder success");
-                                mRecordingBtn.setVisibility(View.VISIBLE);
+                                //TODO comment
+//                                ivRecord.setVisibility(View.VISIBLE);
                             }
                         });
                     }
@@ -712,7 +779,8 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
                             @Override
                             public void run() {
                                 Log.e(TAG, "stop encoder success");
-                                mRecordingBtn.setVisibility(View.VISIBLE);
+                                //TODO comment
+                                ivRecord.setVisibility(View.VISIBLE);
                             }
                         });
                     }
@@ -722,7 +790,7 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
                     @Override
                     public void run() {
                         Toast.makeText(FUDualInputToTextureExampleActivity.this, "video file saved to "
-                                + videoFileName, Toast.LENGTH_SHORT).show();
+                                + mCurrentVideo, Toast.LENGTH_SHORT).show();
                     }
                 });
             }
@@ -733,6 +801,13 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
             }
 
             if (!isInPause) glSf.requestRender();
+
+            mCurrentTime = System.currentTimeMillis();
+            mCurrentTotalDuration = mRecordData.totalVideoDuration + mCurrentTime - mStartTime;
+            videoProgressView.setProgressTime(mCurrentTotalDuration);
+            if( mCurrentTotalDuration >= MAX_RECORD_DURATION ){//录制了15s
+                onStopRecording(mRecordData);
+            }
         }
 
         public void notifyPause() {
@@ -742,7 +817,7 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        mRecordingBtn.performClick();
+                        ivRecord.performClick();
                     }
                 });
             }
@@ -911,7 +986,6 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
     }
 
 
-    @Override
     protected void onEffectItemSelected(String effectItemName) {
         if (effectItemName.equals(mEffectFileName)) {
             return;
@@ -923,7 +997,6 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
     }
 
 
-    @Override
     protected void onCameraChange() {
         Log.e(TAG, "onCameraChange");
         synchronized (prepareCameraDataLock) {
@@ -945,18 +1018,46 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
         }
     }
 
-    @Override
-    protected void onStartRecording() {
-        MiscUtil.Logger(TAG, "start recording", false);
-        mTextureMovieEncoder = new TextureMovieEncoder();
+    protected void onStartRecording(RecordData recordData) {
+        if(mRecordData.totalVideoDuration < MAX_RECORD_DURATION){
+            MiscUtil.Logger(TAG, "start recording", false);
+            mStartTime = System.currentTimeMillis();
+            mRecordData.currentVideoIndex += 1;
+            videoProgressView.setCurrentState(VideoProgressView.State.START);
+            mTextureMovieEncoder = new TextureMovieEncoder();
+        }else{
+            Toast.makeText(FUDualInputToTextureExampleActivity.this, "最大录制15秒", Toast.LENGTH_SHORT).show();
+        }
     }
 
-    @Override
-    protected void onStopRecording() {
+    protected void onStopRecording(RecordData recordData) {
         if (mTextureMovieEncoder != null && mTextureMovieEncoder.checkRecordingStatus(IN_RECORDING)) {
             MiscUtil.Logger(TAG, "stop recording", false);
+            mStopTime = System.currentTimeMillis();
+            recordData.currentVideoDuration  = calcCurrentVideoDuration(mStartTime, mStopTime);
+            recordData.totalVideoDuration += recordData.currentVideoDuration;
+            recordData.currentVideo = mCurrentVideo;
+            mVideoList.add(recordData.currentVideo);
+            videoProgressView.setCurrentState(VideoProgressView.State.PAUSE);
             mTextureMovieEncoder.stopRecording();
+
+
+            if(recordData.totalVideoDuration >= MAX_RECORD_DURATION){
+                VideoUtils.merge(mVideoList, VideoUtils.createOutputFile4Video(Constants.OUTPUT_PATH));
+                FileUtils.deleteAllFiles(Constants.OUTPUT_PATH_TEMP);
+            }
+
         }
+    }
+
+    /**
+     * 计算当前video录制的时长
+     * @param startTime
+     * @param stopTime
+     * @return
+     */
+    private int calcCurrentVideoDuration(long startTime, long stopTime) {
+        return (int) (stopTime - startTime);
     }
 
 
@@ -1017,6 +1118,21 @@ public class FUDualInputToTextureExampleActivity extends FUBaseUIActivity
                     }
                 }
             }
+        }
+    }
+
+
+    static class RecordData {
+        public int currentVideoIndex;
+        public int currentVideoDuration;// 单位ms
+        public String currentVideo;
+        public int totalVideoDuration;//单位ms
+
+        public void reset(){
+            currentVideoIndex = 0;
+            currentVideoDuration = 0;
+            currentVideo = null;
+            totalVideoDuration = 0;
         }
     }
 

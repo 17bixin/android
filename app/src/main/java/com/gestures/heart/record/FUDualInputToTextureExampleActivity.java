@@ -21,6 +21,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
@@ -32,7 +33,7 @@ import com.faceunity.wrapper.faceunity;
 import com.gestures.heart.R;
 import com.gestures.heart.base.utils.Config;
 import com.gestures.heart.base.view.CommonPopupWindow;
-import com.gestures.heart.base.view.VideoProgressView;
+import com.gestures.heart.base.view.SectionProgressBar;
 import com.gestures.heart.base.view.tab.CommonTabLayout;
 import com.gestures.heart.base.view.tab.listener.OnTabSelectListener;
 import com.gestures.heart.camera.AspectFrameLayout;
@@ -157,14 +158,13 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
     private View ivToolMenu;
     private MainHandler mMainHandler;
     private RecordData mRecordData;
-    private final int MAX_RECORD_DURATION = 15000;//最大录制15000毫秒
     private long mStartTime;//单位ms
     private long mStopTime;//单位ms
     private long mCurrentTime;//单位ms
     private long mCurrentTotalDuration;//单位ms
     private String mCurrentVideo;
     private List<String> mVideoList;
-    private VideoProgressView videoProgressView;
+    private SectionProgressBar mSectionProgressBar;
 
 
     @Override
@@ -204,8 +204,22 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
 
     private void initView() {
         //进度
-        videoProgressView = (VideoProgressView) findViewById(R.id.videoProgressView);
-        videoProgressView.setMaxRecordTime(MAX_RECORD_DURATION);
+        mSectionProgressBar = (SectionProgressBar) findViewById(R.id.videoProgressView);
+        mSectionProgressBar.setFirstPointTime(Config.DEFAULT_MIN_RECORD_DURATION);
+        mSectionProgressBar.setTotalTime(this, Config.DEFAULT_MAX_RECORD_DURATION);
+
+        // 删除预选中  回调
+        mSectionProgressBar.setDelSelectedBar(new SectionProgressBar.DelSelectedBar() {
+            @Override
+            public void isSelected(final boolean bool) {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+//                        mDeleteBtn.setBackgroundResource(bool ? R.mipmap.btn_del_back_b : R.mipmap.btn_del_back_a);
+                    }
+                });
+            }
+        });
 
         //顶部菜单
         findViewById(R.id.iv_back).setOnClickListener(this);
@@ -234,6 +248,19 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
         View bottomSheet = findViewById(R.id.bottom_sheet);
         behavior = BottomSheetBehavior.from(bottomSheet);
 
+        findViewById(R.id.ivRecord).setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                int action = event.getAction();
+                if (action == MotionEvent.ACTION_DOWN) {
+//                    startProgressView();
+                } else if (action == MotionEvent.ACTION_UP) {
+//                    stopProgressView();
+                }
+                return false;
+            }
+        });
+
 
         final CommonTabLayout topTabLayout = (CommonTabLayout) findViewById(R.id.layout_record_tab);
         topTabLayout.setTabData(Config.getRecordTabData());
@@ -246,7 +273,8 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
             }
 
             @Override
-            public void onTabReselect(int position) {}
+            public void onTabReselect(int position) {
+            }
         });
 
 
@@ -254,10 +282,103 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
 
     }
 
-    private void initPopupWindow(){
+    // 删除 视频端 (回删)
+    private boolean isSelectedLast = false;
+
+    public void onClickDelete(View v) {
+        isSelectedLast = !isSelectedLast;
+        if (isSelectedLast) {  // 预选中
+            mSectionProgressBar.setSelectedLast(isSelectedLast);
+        } else {
+            if (true) {  // true ： 删除 本段视频失败   删除成功不提示
+//                Log.d(this, "回删视频段失败");
+            } else {
+                isSelectedLast = false;
+            }
+        }
+    }
+
+    /**
+     // 录制第1段 log
+     VideoRecordActivity: onRecordStarted :  1512643573116
+     VideoRecordActivity: onSectionIncreased  1968 totalDuration: 1968 sectionCount: 1
+     VideoRecordActivity: onRecordStopped 1512643575075
+     // 录制第2段  log
+     VideoRecordActivity: onRecordStarted :  1512643578236
+     VideoRecordActivity: onSectionIncreased  1468 totalDuration: 3436 sectionCount: 2
+     VideoRecordActivity: onRecordStopped 1512643579696
+     // 录制第3段  log
+     VideoRecordActivity: onRecordStarted :  1512643582129
+     VideoRecordActivity: onSectionIncreased  1965 totalDuration: 5401 sectionCount: 3
+     VideoRecordActivity: onRecordStopped 1512643584085
+     // 录制第4段  log
+    VideoRecordActivity: onRecordStarted :  1512643587590
+    VideoRecordActivity: onSectionIncreased  879 totalDuration: 6280 sectionCount: 4
+     VideoRecordActivity: onRecordStopped 1512643588464
+     // 回删 log
+     VideoRecordActivity: onSectionDecreased 879 totalDuration: 5401 sectionCount: 3
+     * */
+    /**
+     *  开始录 进度  UI 端调用
+     * */
+    public void onRecordStarted() {
+        Log.i(TAG, "onRecordStarted : " + System.currentTimeMillis());
+        mSectionProgressBar.setSelectedLast(isSelectedLast = false);
+        mSectionProgressBar.setCurrentState(SectionProgressBar.State.START);
+    }
+
+    /***
+     *  停止刷新 进度  UI端调用
+     * */
+    public void onRecordStopped() {
+        Log.i(TAG, "onRecordStopped ：  " + System.currentTimeMillis());
+        mSectionProgressBar.setCurrentState(SectionProgressBar.State.PAUSE);
+    }
+
+    /***
+     *   ####  录制端调用
+     *   增加 视频段 调用
+     *   incDuration : 本段视频 结束时间 - 开始时间
+     *   totalDuration ： 所有小段视频  总时间
+     *   sectionCount ： 段数
+     * */
+    public void onSectionIncreased(long incDuration, long totalDuration, int sectionCount) {
+        Log.i(TAG, "onSectionIncreased    incDuration: " + incDuration + " totalDuration: " + totalDuration + " sectionCount: " + sectionCount);
+        onSectionCountChanged(sectionCount, totalDuration);
+        mSectionProgressBar.addBreakPointTime(totalDuration);
+    }
+
+    /***
+     *
+     * ####  录制端调用
+     *  回删视频段 调用
+     *  decDuration  ： 回删段 毫秒数
+     *  totalDuration ： 剩余所有段 的 总毫秒数
+     *  sectionCount ： 剩余段数
+     * */
+    public void onSectionDecreased(long decDuration, long totalDuration, int sectionCount) {
+        Log.i(TAG, "onSectionDecreased    decDuration: " + decDuration + " totalDuration: " + totalDuration + " sectionCount: " + sectionCount);
+        onSectionCountChanged(sectionCount, totalDuration);
+        mSectionProgressBar.setSelectedLast(false);
+        mSectionProgressBar.removeLastBreakPoint();
+    }
+
+    // 刷新 页面
+    private void onSectionCountChanged(final int count, final long totalTime) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+//                mDeleteBtn.setVisibility(count > 0 ? View.VISIBLE : View.GONE);
+//                mVideoPlayBtn.setVisibility(totalTime >= RecordSettings.DEFAULT_MIN_RECORD_DURATION ? View.VISIBLE : View.GONE);
+            }
+        });
+    }
+
+    private void initPopupWindow() {
         final CommonPopupWindow popWin = new CommonPopupWindow(this, R.layout.layout_record_tools_win, 520, ViewGroup.LayoutParams.WRAP_CONTENT) {
             private ImageView iv_flash_btn, iv_delay_btn, iv_beauty_btn;
             private TextView tv_flash_text, tv_delay_text, tv_beauty_text;
+
             @Override
             protected void initView() {
                 View view = getContentView();
@@ -275,7 +396,6 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
                 iv_flash_btn.setOnClickListener(new View.OnClickListener() {
 
 
-
                     @Override
                     public void onClick(View v) {
                         // 闪光灯开关
@@ -287,7 +407,7 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
                     @Override
                     public void onClick(View view) {
                         //延时拍摄
-                        new CountDownTimer(3000,1000){
+                        new CountDownTimer(3000, 1000) {
 
                             @Override
                             public void onTick(long l) {
@@ -299,8 +419,8 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
                                 if (mRecordStatus == 0) {
                                     onStartRecording(mRecordData);
                                     mRecordStatus ^= 1;
-                                }else{
-                                    Toast.makeText(FUDualInputToTextureExampleActivity.this,"录制中",Toast.LENGTH_SHORT).show();
+                                } else {
+                                    Toast.makeText(FUDualInputToTextureExampleActivity.this, "录制中", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         }.start();
@@ -316,7 +436,7 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
             }
         };
 
-        final CommonPopupWindow.LayoutGravity layoutGravity=new CommonPopupWindow.LayoutGravity(
+        final CommonPopupWindow.LayoutGravity layoutGravity = new CommonPopupWindow.LayoutGravity(
                 CommonPopupWindow.LayoutGravity.ALIGN_LEFT
                         | CommonPopupWindow.LayoutGravity.TO_BOTTOM);
         layoutGravity.setHoriGravity(CommonPopupWindow.LayoutGravity.CENTER_HORI);
@@ -332,7 +452,7 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.iv_back:
                 finish();
                 break;
@@ -343,21 +463,21 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
                 VideoUtils.merge(mVideoList, VideoUtils.createOutputFile4Video(Constants.OUTPUT_PATH));
                 break;
             case R.id.iv_face_btn:
-                if(behavior.getState() == BottomSheetBehavior.STATE_EXPANDED) {
+                if (behavior.getState() == BottomSheetBehavior.STATE_EXPANDED) {
                     behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
-                }else {
+                } else {
                     behavior.setState(BottomSheetBehavior.STATE_EXPANDED);
                 }
                 break;
             case R.id.ivRecord:
-                if (mRecordStatus == 0) {
-                    onStartRecording(mRecordData);
-                    mRecordStatus ^= 1;
-
-                } else {
-                    onStopRecording(mRecordData);
-                    mRecordStatus ^= 1;
-                }
+//                if (mRecordStatus == 0) {
+//                    onStartRecording(mRecordData);
+//                    mRecordStatus ^= 1;
+//
+//                } else {
+//                    onStopRecording(mRecordData);
+//                    mRecordStatus ^= 1;
+//                }
                 break;
 
         }
@@ -639,7 +759,8 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            } else throw new RuntimeException("HOW COULD IT HAPPEN!!! mCameraSurfaceTexture is null!!!");
+            } else
+                throw new RuntimeException("HOW COULD IT HAPPEN!!! mCameraSurfaceTexture is null!!!");
 
             final int isTracking = faceunity.fuIsTracking();
 
@@ -680,7 +801,7 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
                 mCreateItemHandler.sendEmptyMessage(CreateItemHandler.HANDLE_CREATE_ITEM);
             }
 
-            if(mBeauty){
+            if (mBeauty) {
                 faceunity.fuItemSetParam(mFaceBeautyItem, "color_level", mFaceBeautyColorLevel);
                 faceunity.fuItemSetParam(mFaceBeautyItem, "blur_level", mFaceBeautyBlurLevel);
                 faceunity.fuItemSetParam(mFaceBeautyItem, "filter_name", mFilterName);
@@ -689,7 +810,7 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
                 faceunity.fuItemSetParam(mFaceBeautyItem, "face_shape", mFaceShape);
                 faceunity.fuItemSetParam(mFaceBeautyItem, "face_shape_level", mFaceShapeLevel);
                 faceunity.fuItemSetParam(mFaceBeautyItem, "red_level", mFaceBeautyRedLevel);
-            }else{
+            } else {
                 faceunity.fuItemSetParam(mFaceBeautyItem, "color_level", 0);
                 faceunity.fuItemSetParam(mFaceBeautyItem, "blur_level", 0);
                 faceunity.fuItemSetParam(mFaceBeautyItem, "filter_name", 0);
@@ -723,7 +844,8 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
             }
             flags |= currentCameraType == Camera.CameraInfo.CAMERA_FACING_FRONT ? 0 : faceunity.FU_ADM_FLAG_FLIP_X;
 
-            if (isInAvatarMode) faceunity.fuItemSetParam(mEffectItem, "default_rotation_mode", (currentCameraType == Camera.CameraInfo.CAMERA_FACING_FRONT) ? 1 : 3);
+            if (isInAvatarMode)
+                faceunity.fuItemSetParam(mEffectItem, "default_rotation_mode", (currentCameraType == Camera.CameraInfo.CAMERA_FACING_FRONT) ? 1 : 3);
 
             long fuStartTime = System.nanoTime();
             /*
@@ -738,7 +860,8 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
             //            cameraWidth, cameraHeight, mFrameId++, new int[] {mEffectItem, mFaceBeautyItem});
             //mFullScreenCamera.drawFrame(mCameraTextureId, mtx);
             if (mFullScreenFUDisplay != null) mFullScreenFUDisplay.drawFrame(fuTex, mtx);
-            else throw new RuntimeException("HOW COULD IT HAPPEN!!! mFullScreenFUDisplay is null!!!");
+            else
+                throw new RuntimeException("HOW COULD IT HAPPEN!!! mFullScreenFUDisplay is null!!!");
 
             /**
              * 绘制Avatar模式下的镜头内容以及landmarks
@@ -804,8 +927,9 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
 
             mCurrentTime = System.currentTimeMillis();
             mCurrentTotalDuration = mRecordData.totalVideoDuration + mCurrentTime - mStartTime;
-            videoProgressView.setProgressTime(mCurrentTotalDuration);
-            if( mCurrentTotalDuration >= MAX_RECORD_DURATION ){//录制了15s
+
+//            videoProgressView.setProgressTime(mCurrentTotalDuration);
+            if (mCurrentTotalDuration >= Config.DEFAULT_MAX_RECORD_DURATION) {//录制了15s
                 onStopRecording(mRecordData);
             }
         }
@@ -1019,13 +1143,13 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
     }
 
     protected void onStartRecording(RecordData recordData) {
-        if(mRecordData.totalVideoDuration < MAX_RECORD_DURATION){
+        if (mRecordData.totalVideoDuration < Config.DEFAULT_MAX_RECORD_DURATION) {
             MiscUtil.Logger(TAG, "start recording", false);
             mStartTime = System.currentTimeMillis();
             mRecordData.currentVideoIndex += 1;
-            videoProgressView.setCurrentState(VideoProgressView.State.START);
+//            videoProgressView.setCurrentState(VideoProgressView.State.START);
             mTextureMovieEncoder = new TextureMovieEncoder();
-        }else{
+        } else {
             Toast.makeText(FUDualInputToTextureExampleActivity.this, "最大录制15秒", Toast.LENGTH_SHORT).show();
         }
     }
@@ -1034,15 +1158,15 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
         if (mTextureMovieEncoder != null && mTextureMovieEncoder.checkRecordingStatus(IN_RECORDING)) {
             MiscUtil.Logger(TAG, "stop recording", false);
             mStopTime = System.currentTimeMillis();
-            recordData.currentVideoDuration  = calcCurrentVideoDuration(mStartTime, mStopTime);
+            recordData.currentVideoDuration = calcCurrentVideoDuration(mStartTime, mStopTime);
             recordData.totalVideoDuration += recordData.currentVideoDuration;
             recordData.currentVideo = mCurrentVideo;
             mVideoList.add(recordData.currentVideo);
-            videoProgressView.setCurrentState(VideoProgressView.State.PAUSE);
+//            videoProgressView.setCurrentState(VideoProgressView.State.PAUSE);
             mTextureMovieEncoder.stopRecording();
 
 
-            if(recordData.totalVideoDuration >= MAX_RECORD_DURATION){
+            if (recordData.totalVideoDuration >= Config.DEFAULT_MAX_RECORD_DURATION) {
                 VideoUtils.merge(mVideoList, VideoUtils.createOutputFile4Video(Constants.OUTPUT_PATH));
                 FileUtils.deleteAllFiles(Constants.OUTPUT_PATH_TEMP);
             }
@@ -1052,6 +1176,7 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
 
     /**
      * 计算当前video录制的时长
+     *
      * @param startTime
      * @param stopTime
      * @return
@@ -1079,7 +1204,7 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
      * @return
      */
     private void lightSwitch(final boolean lightStatus) {
-        if(mCameraManager == null){
+        if (mCameraManager == null) {
             mCameraManager = (CameraManager) getSystemService(Context.CAMERA_SERVICE);
         }
         if (lightStatus) { // 关闭手电筒
@@ -1128,7 +1253,7 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
         public String currentVideo;
         public int totalVideoDuration;//单位ms
 
-        public void reset(){
+        public void reset() {
             currentVideoIndex = 0;
             currentVideoDuration = 0;
             currentVideo = null;

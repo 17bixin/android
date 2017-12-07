@@ -8,6 +8,14 @@ import java.util.ArrayList;
 public class Config {
 
 
+    // 最小录制时间
+    public final static long DEFAULT_MIN_RECORD_DURATION = 3_000;
+
+
+    //最大录制时间
+    public final static long DEFAULT_MAX_RECORD_DURATION = 15_000;
+
+
     /**  录制 Tab Data*/
     public static ArrayList<CustomTabEntity> getRecordTabData(){
         String[] mTitles = {"正常拍", "表情包"};

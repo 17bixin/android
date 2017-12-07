@@ -810,12 +810,15 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
 
             if (!isInPause) glSf.requestRender();
 
-            mCurrentTime = System.currentTimeMillis();
-            mCurrentTotalDuration = mRecordData.totalVideoDuration + mCurrentTime - mStartTime;
-            videoProgressView.setProgressTime(mCurrentTotalDuration);
-            if( mCurrentTotalDuration >= MAX_RECORD_DURATION ){//录制了15s
-                onStopRecording(mRecordData);
+            if(mRecordStatus == 1){//开始录制才记录
+                mCurrentTime = System.currentTimeMillis();
+                mCurrentTotalDuration = mRecordData.totalVideoDuration + mCurrentTime - mStartTime;
+                videoProgressView.setProgressTime(mCurrentTotalDuration);
+                if( mCurrentTotalDuration >= MAX_RECORD_DURATION ){//录制了15s
+                    onStopRecording(mRecordData);
+                }
             }
+
         }
 
         public void notifyPause() {

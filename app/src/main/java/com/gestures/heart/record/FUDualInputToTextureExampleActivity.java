@@ -148,6 +148,7 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
     private EffectAndFilterSelectAdapter mEffectRecyclerAdapter;
     private BottomSheetBehavior<View> behavior;
     protected ImageView ivRecord;
+    private ImageView ivDeleteVideo;
 
     private CameraManager mCameraManager;
 
@@ -245,6 +246,7 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
         findViewById(R.id.iv_face_btn).setOnClickListener(this);
         ivRecord = (ImageView) findViewById(R.id.ivRecord);
         ivRecord.setOnClickListener(this);
+        findViewById(R.id.ivDeleteVideo).setOnClickListener(this);
         View bottomSheet = findViewById(R.id.bottom_sheet);
         behavior = BottomSheetBehavior.from(bottomSheet);
 
@@ -312,15 +314,15 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
      VideoRecordActivity: onSectionIncreased  1965 totalDuration: 5401 sectionCount: 3
      VideoRecordActivity: onRecordStopped 1512643584085
      // 录制第4段  log
-    VideoRecordActivity: onRecordStarted :  1512643587590
-    VideoRecordActivity: onSectionIncreased  879 totalDuration: 6280 sectionCount: 4
+     VideoRecordActivity: onRecordStarted :  1512643587590
+     VideoRecordActivity: onSectionIncreased  879 totalDuration: 6280 sectionCount: 4
      VideoRecordActivity: onRecordStopped 1512643588464
      // 回删 log
      VideoRecordActivity: onSectionDecreased 879 totalDuration: 5401 sectionCount: 3
      * */
     /**
-     *  开始录 进度  UI 端调用
-     * */
+     * 开始录 进度  UI 端调用
+     */
     public void onRecordStarted() {
         Log.i(TAG, "onRecordStarted : " + System.currentTimeMillis());
         mSectionProgressBar.setSelectedLast(isSelectedLast = false);
@@ -478,6 +480,12 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
 //                    onStopRecording(mRecordData);
 //                    mRecordStatus ^= 1;
 //                }
+                break;
+            case R.id.ivDeleteVideo://删除上一段视频
+                if (mVideoList.size() > 0) {
+                    mVideoList.remove(mVideoList.size() - 1);
+                    mRecordData.removeLast();
+                }
                 break;
 
         }
@@ -931,6 +939,14 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
 //            videoProgressView.setProgressTime(mCurrentTotalDuration);
             if (mCurrentTotalDuration >= Config.DEFAULT_MAX_RECORD_DURATION) {//录制了15s
                 onStopRecording(mRecordData);
+                if (mRecordStatus == 1) {//开始录制才记录
+                    mCurrentTime = System.currentTimeMillis();
+                    mCurrentTotalDuration = mRecordData.totalVideoDuration + mCurrentTime - mStartTime;
+//                videoProgressView.setProgressTime(mCurrentTotalDuration);
+                    if (mCurrentTotalDuration >= Config.DEFAULT_MAX_RECORD_DURATION) {//录制了15s
+                        onStopRecording(mRecordData);
+                    }
+                }
             }
         }
 
@@ -1169,6 +1185,8 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
             if (recordData.totalVideoDuration >= Config.DEFAULT_MAX_RECORD_DURATION) {
                 VideoUtils.merge(mVideoList, VideoUtils.createOutputFile4Video(Constants.OUTPUT_PATH));
                 FileUtils.deleteAllFiles(Constants.OUTPUT_PATH_TEMP);
+                mRecordData.reset();
+                mVideoList.clear();
             }
 
         }
@@ -1258,6 +1276,12 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
             currentVideoDuration = 0;
             currentVideo = null;
             totalVideoDuration = 0;
+        }
+
+        public void removeLast() {
+            --currentVideoIndex;
+            totalVideoDuration -= currentVideoDuration;
+            currentVideoDuration = 0;
         }
     }
 

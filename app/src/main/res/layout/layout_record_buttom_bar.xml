@@ -35,6 +35,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1">
         <ImageView
+            android:id="@+id/ivDeleteVideo"
             android:layout_width="33dp"
             android:layout_height="33dp"
             android:layout_centerInParent="true"

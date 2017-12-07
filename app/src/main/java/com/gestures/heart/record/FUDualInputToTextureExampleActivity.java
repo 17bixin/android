@@ -147,6 +147,7 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
     private EffectAndFilterSelectAdapter mEffectRecyclerAdapter;
     private BottomSheetBehavior<View> behavior;
     protected ImageView ivRecord;
+    private ImageView ivDeleteVideo;
 
     private CameraManager mCameraManager;
 
@@ -231,6 +232,7 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
         findViewById(R.id.iv_face_btn).setOnClickListener(this);
         ivRecord = (ImageView) findViewById(R.id.ivRecord);
         ivRecord.setOnClickListener(this);
+        findViewById(R.id.ivDeleteVideo).setOnClickListener(this);
         View bottomSheet = findViewById(R.id.bottom_sheet);
         behavior = BottomSheetBehavior.from(bottomSheet);
 
@@ -357,6 +359,12 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
                 } else {
                     onStopRecording(mRecordData);
                     mRecordStatus ^= 1;
+                }
+                break;
+            case R.id.ivDeleteVideo://删除上一段视频
+                if(mVideoList.size() > 0){
+                    mVideoList.remove(mVideoList.size()-1);
+                    mRecordData.removeLast();
                 }
                 break;
 
@@ -1045,6 +1053,8 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
             if(recordData.totalVideoDuration >= MAX_RECORD_DURATION){
                 VideoUtils.merge(mVideoList, VideoUtils.createOutputFile4Video(Constants.OUTPUT_PATH));
                 FileUtils.deleteAllFiles(Constants.OUTPUT_PATH_TEMP);
+                mRecordData.reset();
+                mVideoList.clear();
             }
 
         }
@@ -1133,6 +1143,12 @@ public class FUDualInputToTextureExampleActivity extends AppCompatActivity
             currentVideoDuration = 0;
             currentVideo = null;
             totalVideoDuration = 0;
+        }
+
+        public void removeLast(){
+            -- currentVideoIndex;
+            totalVideoDuration -= currentVideoDuration;
+            currentVideoDuration = 0;
         }
     }
 

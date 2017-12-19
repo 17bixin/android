@@ -23,6 +23,7 @@ dependencies {
 
     compile project(path: ':picture_library')
     compile externalAndroidDesign
+    compile externalGSON
 
     compile 'org.adw.library:discrete-seekbar:1.0.1'
     compile 'com.github.dfqin:grantor:2.4'

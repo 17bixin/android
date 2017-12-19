@@ -1,6 +1,6 @@
 ext {
 
-    // 2017 - 12 - 19 Alens 
+    // 2017 - 12 - 19 Alens
 
     externalAndroidBuildGradlePlugin = 'com.android.tools.build:gradle:2.3.3'
 

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/wangyuan4040163com/GesturesHeart/picture_library/src/main/assets"/><source path="/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/generated/assets/shaders/release"/></dataSet><dataSet config="release"><source path="/Users/wangyuan4040163com/GesturesHeart/picture_library/src/release/assets"/></dataSet></merger>

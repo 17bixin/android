@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/androidTest/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/androidTest/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    }
+]

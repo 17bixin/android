@@ -1,21 +1,30 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-
 buildscript {
     repositories {
         jcenter()
     }
+    apply from: 'config.gradle'
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath externalAndroidBuildGradlePlugin
+        classpath 'com.novoda:bintray-release:0.3.4'
     }
+
+    tasks.withType(JavaCompile) { options.encoding = "UTF-8" }
 }
 
 allprojects {
     repositories {
         jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.google.com' }
     }
+
+    group = 'com.gestures.heart'
+    version = projectVersion
+
+    apply plugin: 'idea'
+
+    buildDir = new File(rootDir, ".gradle-build/${path.replaceAll(':', '/')}")
 }
 
 task clean(type: Delete) {

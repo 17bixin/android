@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/6d85c9f8b56dce98100dbfa36ab24eed0ffbddc5/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    }
+]

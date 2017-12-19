@@ -1,0 +1,114 @@
+[
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/fade_out.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/res/anim/fade_out.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/c4098f8757030c21b952aec6b002c96b19d70194/output/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/tooltip_enter.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/tooltip_enter.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/photo_album_dismiss.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/res/anim/photo_album_dismiss.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/c4098f8757030c21b952aec6b002c96b19d70194/output/res/anim/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/c4098f8757030c21b952aec6b002c96b19d70194/output/res/anim/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/a5.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/res/anim/a5.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/tooltip_exit.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/tooltip_exit.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/up_in.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/res/anim/up_in.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/down_out.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/res/anim/down_out.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/fade_in.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/res/anim/fade_in.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/photo_anticipate_interpolator.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/res/anim/photo_anticipate_interpolator.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/photo_album_show.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/res/anim/photo_album_show.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/modal_out.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/res/anim/modal_out.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/a3.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/res/anim/a3.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/modal_in.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/res/anim/modal_in.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/c4098f8757030c21b952aec6b002c96b19d70194/output/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/photo_overshoot_interpolator.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/res/anim/photo_overshoot_interpolator.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_slide_out_top.xml"
+    }
+]

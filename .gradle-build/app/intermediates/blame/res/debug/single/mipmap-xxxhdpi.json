@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher_round.png",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher.png",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    }
+]

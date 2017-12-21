@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/wangyuan4040163com/GesturesHeart/app/libs/nama.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4434ab8a45a7906f52df11618b7365fa20eafa3a">
+        <dex dex="/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/pre-dexed/debug/nama_a9ad51b60534a343c6c25facf068bd5a13b45c2c.jar" />
+    </item>
+
+</items>

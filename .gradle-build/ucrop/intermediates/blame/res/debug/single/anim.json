@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/res/merged/debug/anim/ucrop_loader_circle_path.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/ucrop/src/main/res/anim/ucrop_loader_circle_path.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/res/merged/debug/anim/ucrop_loader_circle_scale.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/ucrop/src/main/res/anim/ucrop_loader_circle_scale.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/res/merged/debug/anim/tooltip_exit.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/tooltip_exit.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/res/merged/debug/anim/ucrop_close.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/ucrop/src/main/res/anim/ucrop_close.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/res/merged/debug/anim/tooltip_enter.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/tooltip_enter.xml"
+    }
+]

@@ -60,6 +60,10 @@
         "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/color/abc_primary_text_disable_only_material_light.xml"
     },
     {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/debug/color/ucrop_scale_text_view_selector.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/bundles/default/res/color/ucrop_scale_text_view_selector.xml"
+    },
+    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/debug/color/abc_tint_default.xml",
         "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/color/abc_tint_default.xml"
     },

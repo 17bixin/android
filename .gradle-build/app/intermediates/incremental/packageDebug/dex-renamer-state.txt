@@ -1,0 +1,4 @@
+#Thu Dec 21 17:27:32 CST 2017
+base.0=/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

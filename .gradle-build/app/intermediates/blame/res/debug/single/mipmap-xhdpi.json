@@ -12,6 +12,10 @@
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/yuguan.png"
     },
     {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_arrow_right.png",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_arrow_right.png"
+    },
+    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/electric.png",
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/electric.png"
     },
@@ -122,6 +126,10 @@
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/btn_record.png",
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/btn_record.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_arrow_left.png",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_arrow_left.png"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/mood.png",

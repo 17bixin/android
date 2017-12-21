@@ -7,8 +7,8 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.gestures.heart.crop.VideoListActivity;
 import com.gestures.heart.record.FUDualInputToTextureExampleActivity;
-import com.gestures.heart.crop.VideoCropActivity;
 import com.github.dfqin.grantor.PermissionListener;
 import com.github.dfqin.grantor.PermissionsUtil;
 
@@ -44,12 +44,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.tv_video_crop).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.tv_video_list).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                VideoCropActivity.startSelf(MainActivity.this);
+                VideoListActivity.startSelf(MainActivity.this);
             }
         });
+
+
     }
 
 }

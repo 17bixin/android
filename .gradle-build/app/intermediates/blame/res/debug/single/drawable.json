@@ -40,24 +40,24 @@
         "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/drawable/abc_dialog_material_background.xml"
     },
     {
-        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
-        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/drawable/abc_tab_indicator_material.xml"
-    },
-    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/picture_btn_music_shape.xml",
         "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/res/drawable/picture_btn_music_shape.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/drawable/abc_tab_indicator_material.xml"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/item_select_bg.xml",
         "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/res/drawable/item_select_bg.xml"
     },
     {
-        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/p_seekbar_thumb_normal.xml",
-        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/res/drawable/p_seekbar_thumb_normal.xml"
-    },
-    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/picture_checkbox_selector.xml",
         "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/res/drawable/picture_checkbox_selector.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/p_seekbar_thumb_normal.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/res/drawable/p_seekbar_thumb_normal.xml"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
@@ -78,6 +78,10 @@
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/tooltip_frame_light.xml",
         "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/drawable/tooltip_frame_light.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/sample_footer_loading_progress.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/2fad2674be4c6defd752b4d4b8b8d0f4fe0c05ba/output/res/drawable/sample_footer_loading_progress.xml"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
@@ -112,6 +116,14 @@
         "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/drawable/abc_text_cursor_material.xml"
     },
     {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/ucrop_vector_loader.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/bundles/default/res/drawable/ucrop_vector_loader.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/ucrop_vector_ic_crop.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/bundles/default/res/drawable/ucrop_vector_ic_crop.xml"
+    },
+    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
         "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/drawable/abc_textfield_search_material.xml"
     },
@@ -140,6 +152,10 @@
         "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/ucrop_vector_loader_animated.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/bundles/default/res/drawable/ucrop_vector_loader_animated.xml"
+    },
+    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/btn_right_true.xml",
         "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/res/drawable/btn_right_true.xml"
     },
@@ -164,6 +180,10 @@
         "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/drawable/abc_ratingbar_small_material.xml"
     },
     {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/sample_footer_loading.png",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/2fad2674be4c6defd752b4d4b8b8d0f4fe0c05ba/output/res/drawable/sample_footer_loading.png"
+    },
+    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/dialog_shadow.xml",
         "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/res/drawable/dialog_shadow.xml"
     },
@@ -176,12 +196,20 @@
         "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/ucrop_oval_true.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/bundles/default/res/drawable/ucrop_oval_true.xml"
+    },
+    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
         "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
         "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/ucrop_shadow_upside.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/bundles/default/res/drawable/ucrop_shadow_upside.xml"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable/picture_sb_thumb.xml",

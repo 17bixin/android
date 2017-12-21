@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">GesturesHeart</string>
+    <string name="app_name">比心</string>
+
+    <string name="video_select">视频选择</string>
+
+    <string name="video_crop">视频剪辑</string>
+    <string name="trimming_progress">视频正在生成~</string>
+    <string name="next_text">下一步</string>
+
+    <dimen name="fab_elevation">5dp</dimen>
+    <dimen name="fab_rise">3dp</dimen>
+    <integer name="fab_duration">100</integer>
+
+
+
 </resources>

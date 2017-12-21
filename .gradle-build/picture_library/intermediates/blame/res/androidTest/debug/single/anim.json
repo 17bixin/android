@@ -40,6 +40,10 @@
         "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/androidTest/debug/anim/ucrop_loader_circle_path.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/bundles/default/res/anim/ucrop_loader_circle_path.xml"
+    },
+    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/androidTest/debug/anim/a5.xml",
         "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/debug/res/anim/a5.xml"
     },
@@ -88,8 +92,16 @@
         "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/debug/res/anim/down_out.xml"
     },
     {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/androidTest/debug/anim/ucrop_loader_circle_scale.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/bundles/default/res/anim/ucrop_loader_circle_scale.xml"
+    },
+    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/androidTest/debug/anim/tooltip_enter.xml",
         "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/anim/tooltip_enter.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/androidTest/debug/anim/ucrop_close.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/bundles/default/res/anim/ucrop_close.xml"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/androidTest/debug/anim/photo_anticipate_interpolator.xml",

@@ -20,6 +20,10 @@
         "source": "/Users/wangyuan4040163com/GesturesHeart/picture_library/src/main/res/anim/photo_anticipate_interpolator.xml"
     },
     {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/debug/anim/ucrop_loader_circle_scale.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/bundles/default/res/anim/ucrop_loader_circle_scale.xml"
+    },
+    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/debug/anim/down_out.xml",
         "source": "/Users/wangyuan4040163com/GesturesHeart/picture_library/src/main/res/anim/down_out.xml"
     },
@@ -34,6 +38,10 @@
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/debug/anim/photo_album_dismiss.xml",
         "source": "/Users/wangyuan4040163com/GesturesHeart/picture_library/src/main/res/anim/photo_album_dismiss.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/debug/anim/ucrop_loader_circle_path.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/bundles/default/res/anim/ucrop_loader_circle_path.xml"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/debug/anim/photo_overshoot_interpolator.xml",
@@ -94,5 +102,9 @@
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/debug/anim/a5.xml",
         "source": "/Users/wangyuan4040163com/GesturesHeart/picture_library/src/main/res/anim/a5.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/res/merged/debug/anim/ucrop_close.xml",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/ucrop/intermediates/bundles/default/res/anim/ucrop_close.xml"
     }
 ]

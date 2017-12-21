@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:2:1-48:12
+ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:2:1-45:12
 	package
 		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:3:5-33
 		INJECTED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml
@@ -15,12 +15,10 @@ ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.
 		INJECTED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.CAMERA
 ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:5:5-65
-MERGED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:13:5-65
 	android:name
 		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:5:22-62
 uses-permission#android.permission.RECORD_AUDIO
 ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:6:5-71
-MERGED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:20:5-71
 	android:name
 		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:6:22-68
 uses-permission#android.permission.FLASHLIGHT
@@ -29,54 +27,48 @@ ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.
 		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:7:22-66
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:8:5-81
-MERGED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:12:5-81
 	android:name
 		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:8:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:9:5-80
-MERGED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:11:5-80
 	android:name
 		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:9:22-77
 uses-permission#android.permission.INTERNET
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:11:5-67
-MERGED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:15:5-67
+ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:10:5-67
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:11:22-64
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:10:22-64
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:12:5-79
+ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:12:22-76
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:11:22-76
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:13:5-76
+ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:12:5-76
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:13:22-73
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:12:22-73
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:14:5-79
-MERGED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:19:5-79
+ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:13:5-79
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:14:22-76
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:13:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:15:5-76
-MERGED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:17:5-76
+ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:14:5-76
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:15:22-73
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:14:22-73
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:16:5-68
+ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:15:5-68
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:16:22-65
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:15:22-65
 uses-feature#android.hardware.camera
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:20:5-60
+ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:17:5-60
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:20:19-57
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:17:19-57
 uses-feature#0x00020000
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:21:5-23:35
+ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:18:5-20:35
 	android:glEsVersion
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:22:9-41
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:19:9-41
 	android:required
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:23:9-32
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:20:9-32
 application
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:25:5-46:19
-MERGED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:22:5-68:19
+ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:22:5-43:19
 MERGED from [com.android.support:design:26.1.0] /Users/wangyuan4040163com/.android/build-cache/c4098f8757030c21b952aec6b002c96b19d70194/output/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/wangyuan4040163com/.android/build-cache/735845b4ca723e1aa94cef2d03f645134a2d40b5/output/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:transition:26.1.0] /Users/wangyuan4040163com/.android/build-cache/a98268184c6ef9d841d87fbfdcffa2cf0fbebcac/output/AndroidManifest.xml:22:5-26:19
@@ -93,52 +85,55 @@ MERGED from [com.android.support:support-core-ui:26.1.0] /Users/wangyuan4040163c
 MERGED from [com.android.support:support-compat:26.1.0] /Users/wangyuan4040163com/.android/build-cache/6d85c9f8b56dce98100dbfa36ab24eed0ffbddc5/output/AndroidManifest.xml:25:5-29:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/wangyuan4040163com/.android/build-cache/73891a9a8e15c486062818881e3e7832bcd9030d/output/AndroidManifest.xml:24:5-28:19
 	android:label
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:29:9-41
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:26:9-41
 	android:supportsRtl
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:31:9-35
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:28:9-35
 	android:roundIcon
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:30:9-54
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:27:9-54
 	android:allowBackup
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:27:9-35
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:24:9-35
 	android:icon
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:28:9-43
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:25:9-43
 	android:theme
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:32:9-40
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:29:9-40
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:26:9-29
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:23:9-29
 activity#com.gestures.heart.MainActivity
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:33:9-39:20
+ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:30:9-36:20
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:33:19-47
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:30:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:34:13-38:29
+ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:31:13-35:29
 action#android.intent.action.MAIN
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:35:17-69
+ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:35:25-66
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:37:17-77
+ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:37:27-74
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:34:27-74
 activity#com.gestures.heart.record.FUDualInputToTextureExampleActivity
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:41:9-80
+ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:37:9-80
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:41:19-77
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:37:19-77
 activity#com.gestures.heart.crop.VideoCropActivity
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:43:9-45:52
+ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:38:9-41:52
 	android:screenOrientation
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:45:13-49
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:41:13-49
 	android:launchMode
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:44:13-44
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:40:13-44
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:43:19-57
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:39:13-51
+activity#com.gestures.heart.crop.VideoListActivity
+ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:42:9-69
+	android:name
+		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:42:19-57
 uses-sdk
 INJECTED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/wangyuan4040163com/.android/build-cache/9055075b0439e37a85cf4985c4ef8add9f8e0b13/output/AndroidManifest.xml:19:5-43
 MERGED from [com.android.support:design:26.1.0] /Users/wangyuan4040163com/.android/build-cache/c4098f8757030c21b952aec6b002c96b19d70194/output/AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/wangyuan4040163com/.android/build-cache/735845b4ca723e1aa94cef2d03f645134a2d40b5/output/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:26.1.0] /Users/wangyuan4040163com/.android/build-cache/a98268184c6ef9d841d87fbfdcffa2cf0fbebcac/output/AndroidManifest.xml:20:5-44
+MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34] /Users/wangyuan4040163com/.android/build-cache/2fad2674be4c6defd752b4d4b8b8d0f4fe0c05ba/output/AndroidManifest.xml:7:5-9:41
 MERGED from [org.adw.library:discrete-seekbar:1.0.1] /Users/wangyuan4040163com/.android/build-cache/3cf61237b4642e10d66bab962afb075593dbde08/output/AndroidManifest.xml:23:5-25:41
 MERGED from [com.github.dfqin:grantor:2.4] /Users/wangyuan4040163com/.android/build-cache/032d4c9f24ae70170c3128f9646b6a84006ff5e0/output/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/AndroidManifest.xml:21:5-23:78
@@ -159,100 +154,6 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/wangyuan4040163com/.an
 	android:minSdkVersion
 		INJECTED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml
-uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:14:5-84
-	android:name
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:14:22-81
-uses-permission#android.permission.WRITE_SETTINGS
-ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:16:5-73
-	android:name
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:16:22-70
-uses-permission#android.permission.WRITE_MEDIA_STORAGE
-ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:18:5-78
-	android:name
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:18:22-75
-provider#com.luck.picture.lib.PictureFileProvider
-ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:25:9-33:20
-	android:authorities
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:27:13-60
-	android:grantUriPermissions
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:29:13-47
-	android:exported
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:28:13-37
-	android:name
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:26:13-68
-meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:30:13-32:54
-	android:resource
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:32:17-51
-	android:name
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:31:17-67
-activity#com.luck.picture.lib.PictureSelectorActivity
-ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:35:9-39:55
-	android:screenOrientation
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:37:13-49
-	android:windowSoftInputMode
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:39:13-52
-	android:theme
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:38:13-50
-	android:name
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:36:13-72
-activity#com.luck.picture.lib.PictureBaseActivity
-ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:40:9-42:52
-	android:screenOrientation
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:42:13-49
-	android:name
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:41:13-68
-activity#com.luck.picture.lib.PicturePreviewActivity
-ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:43:9-46:53
-	android:screenOrientation
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:45:13-49
-	android:theme
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:46:13-50
-	android:name
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:44:13-71
-activity#com.luck.picture.lib.PictureVideoPlayActivity
-ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:47:9-51:53
-	android:screenOrientation
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:50:13-47
-	android:configChanges
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:49:13-74
-	android:theme
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:51:13-50
-	android:name
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:48:13-73
-activity#com.luck.picture.lib.PictureExternalPreviewActivity
-ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:52:9-55:53
-	android:screenOrientation
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:54:13-49
-	android:theme
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:55:13-50
-	android:name
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:53:13-79
-activity#com.yalantis.ucrop.UCropActivity
-ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:56:9-59:72
-	android:screenOrientation
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:58:13-49
-	android:theme
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:59:13-69
-	android:name
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:57:13-60
-activity#com.yalantis.ucrop.PictureMultiCuttingActivity
-ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:60:9-63:72
-	android:screenOrientation
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:62:13-49
-	android:theme
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:63:13-69
-	android:name
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:61:13-74
-activity#com.luck.picture.lib.PicturePlayAudioActivity
-ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:64:9-67:72
-	android:screenOrientation
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:66:13-49
-	android:theme
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:67:13-69
-	android:name
-		ADDED from [com.gestures.heart:picture_library:1.0.0] /Users/wangyuan4040163com/GesturesHeart/.gradle-build/picture_library/intermediates/bundles/default/AndroidManifest.xml:65:13-73
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:26.1.0] /Users/wangyuan4040163com/.android/build-cache/c4098f8757030c21b952aec6b002c96b19d70194/output/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/wangyuan4040163com/.android/build-cache/735845b4ca723e1aa94cef2d03f645134a2d40b5/output/AndroidManifest.xml:23:9-25:38

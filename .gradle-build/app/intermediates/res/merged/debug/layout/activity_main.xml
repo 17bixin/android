@@ -17,6 +17,17 @@
         android:gravity="center"
         android:layout_margin="30dp"/>
 
+    <TextView
+        android:id="@+id/tv_video_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:text="视频列表"
+        android:gravity="center"
+        android:layout_margin="30dp"/>
+
 
     <TextView
         android:id="@+id/tv_video_crop"

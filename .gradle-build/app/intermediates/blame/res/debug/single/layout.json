@@ -32,16 +32,16 @@
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/layout/layout_record_top_bar.xml"
     },
     {
-        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/layout/abc_popup_menu_item_layout.xml"
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/layout/abc_action_bar_up_container.xml"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/layout/layout_record_tools_win.xml",
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/layout/layout_record_tools_win.xml"
     },
     {
-        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/layout/abc_action_bar_up_container.xml"
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
@@ -60,12 +60,12 @@
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/layout/layout_tab_bottom.xml"
     },
     {
-        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/layout/abc_list_menu_item_icon.xml"
-    },
-    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
         "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/layout/abc_list_menu_item_icon.xml"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
@@ -140,12 +140,12 @@
         "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/layout/abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/layout/select_dialog_multichoice_material.xml"
-    },
-    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/layout/activity_video_crop.xml",
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/layout/activity_video_crop.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/layout/select_dialog_multichoice_material.xml"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/layout/activity_camera_base.xml",

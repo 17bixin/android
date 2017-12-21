@@ -16,7 +16,7 @@
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:scaleType="fitXY"
-        android:src="@mipmap/ic_back" />
+        android:src="@mipmap/iv_back_black" />
 
     <TextView
         android:id="@+id/tv_title_name"

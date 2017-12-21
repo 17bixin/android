@@ -50,8 +50,6 @@ public class MainActivity extends AppCompatActivity {
                 VideoListActivity.startSelf(MainActivity.this);
             }
         });
-
-
     }
 
 }

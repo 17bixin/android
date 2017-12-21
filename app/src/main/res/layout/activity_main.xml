@@ -24,19 +24,7 @@
         android:background="@color/colorAccent"
         android:textColor="@android:color/white"
         android:padding="10dp"
-        android:text="视频列表"
-        android:gravity="center"
-        android:layout_margin="30dp"/>
-
-
-    <TextView
-        android:id="@+id/tv_video_crop"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:textColor="@android:color/white"
-        android:padding="10dp"
-        android:text="视频裁剪"
+        android:text="视频列表 ——> 裁剪"
         android:gravity="center"
         android:layout_margin="30dp"/>
 

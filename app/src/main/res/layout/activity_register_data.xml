@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_bg_register"
+    tools:context="com.gestures.heart.login.LoginOrRegisterActivity">
+
+    <ImageView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="goCancel"
+        android:src="@mipmap/ic_back" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_cancel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="填写资料"
+        android:textColor="@android:color/white"
+        android:textSize="26dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_message"
+        android:layout_marginTop="40dp"
+        android:contentDescription="性别"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_boy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="男"
+            android:textColor="@drawable/selector_select_text"/>
+
+        <RadioButton
+            android:id="@+id/radio_girl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="女"
+            android:textColor="@drawable/selector_select_text" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/user_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="45dp"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="输入昵称"
+        android:textColor="@android:color/white"
+        android:textColorHint="#66FFFFFF"
+        android:textCursorDrawable="@drawable/shape_cursor_style"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/user_name_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="#66FFFFFF" />
+
+    <TextView
+        android:id="@+id/birthday_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_view"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="设置生日"
+        android:textColor="@android:color/white"
+        android:textColorHint="#66FFFFFF"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/birthday_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="#66FFFFFF" />
+
+    <ImageView
+        android:id="@+id/iv_submit"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitXY" />
+</RelativeLayout>

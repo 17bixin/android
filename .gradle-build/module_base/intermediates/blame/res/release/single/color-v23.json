@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/release/color-v23/abc_tint_default.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/release/color-v23/abc_btn_colored_text_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/color-v23/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/release/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/release/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/release/color-v23/design_tint_password_toggle.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/color-v23/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/release/color-v23/abc_tint_spinner.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/release/color-v23/abc_tint_switch_track.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/release/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/release/color-v23/abc_color_highlight_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/release/color-v23/abc_tint_edittext.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/color-v23/abc_tint_edittext.xml"
+    }
+]

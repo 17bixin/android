@@ -1,0 +1,98 @@
+[
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/dialogui_exit_center.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/anim/dialogui_exit_center.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/anim/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/pickerview_dialog_scale_in.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/anim/pickerview_dialog_scale_in.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/design_snackbar_out.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/pickerview_dialog_scale_out.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/anim/pickerview_dialog_scale_out.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/abc_fade_in.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/abc_fade_out.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/design_snackbar_in.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/dialogui_enter.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/anim/dialogui_enter.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/dialogui_enter_center.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/anim/dialogui_enter_center.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/pickerview_slide_in_bottom.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/anim/pickerview_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/anim/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/tooltip_enter.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/anim/tooltip_enter.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/pickerview_slide_out_bottom.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/anim/pickerview_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/dialogui_exit.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/anim/dialogui_exit.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/tooltip_exit.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/anim/tooltip_exit.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/androidTest/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    }
+]

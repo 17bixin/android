@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/F6F6F6"
+    tools:context="com.gestures.heart.settings.SettingsActivity">
+
+    <include
+        android:id="@+id/set_layout_head"
+        layout="@layout/include_layout_setting_head" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/set_layout_head"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/set_layout_style"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    style="@style/set_text_style"
+                    android:text="接收通知提醒" />
+
+                <com.gestures.heart.ui.SwitchView
+                    android:id="@+id/switch_notice"
+                    style="@style/set_switch_style" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="消息通知"
+                android:textSize="@dimen/sp_14" />
+
+            <RelativeLayout style="@style/set_layout_style">
+
+                <TextView
+                    style="@style/set_text_style"
+                    android:text="对话消息通知" />
+
+                <com.gestures.heart.ui.SwitchView
+                    android:id="@+id/switch_mobile_2g"
+                    style="@style/set_switch_style" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/set_line" />
+
+            <RelativeLayout style="@style/set_layout_style">
+
+                <TextView
+                    style="@style/set_text_style"
+                    android:text="配对成功通知" />
+
+                <com.gestures.heart.ui.SwitchView
+                    android:id="@+id/switch_success_notice"
+                    style="@style/set_switch_style" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/set_line" />
+
+            <RelativeLayout style="@style/set_layout_style">
+
+                <TextView
+                    style="@style/set_text_style"
+                    android:text="super like通知" />
+
+                <com.gestures.heart.ui.SwitchView
+                    android:id="@+id/switch_super_like"
+                    style="@style/set_switch_style" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/set_line" />
+
+            <RelativeLayout style="@style/set_layout_style">
+
+                <TextView
+                    style="@style/set_text_style"
+                    android:text="邀请通知" />
+
+                <com.gestures.heart.ui.SwitchView
+                    android:id="@+id/switch_invite"
+                    style="@style/set_switch_style" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/set_line" />
+
+            <RelativeLayout style="@style/set_layout_style">
+
+                <TextView
+                    style="@style/set_text_style"
+                    android:text="推送通知" />
+
+                <com.gestures.heart.ui.SwitchView
+                    android:id="@+id/switch_push"
+                    style="@style/set_switch_style" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/set_line" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

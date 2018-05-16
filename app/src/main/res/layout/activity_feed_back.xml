@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/F6F6F6"
+    android:orientation="vertical"
+    tools:context="com.gestures.heart.settings.SettingsActivity">
+
+    <include
+        android:id="@+id/set_layout_head"
+        layout="@layout/include_layout_setting_head" />
+
+    <EditText
+        android:id="@+id/et_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_feed_back"
+        android:gravity="top"
+        android:hint="请简要的描述你所遇到的问题"
+        android:padding="3dp"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+
+    <EditText
+        android:id="@+id/et_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_feed_back"
+        android:hint="你的联系方式，方便我们及时和您联系"
+        android:padding="5dp"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp" />
+</LinearLayout>

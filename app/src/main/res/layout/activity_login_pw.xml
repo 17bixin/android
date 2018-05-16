@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_bg_register"
+    tools:context="com.gestures.heart.login.LoginOrRegisterActivity">
+
+    <ImageView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="goCancel"
+        android:src="@mipmap/ic_back" />
+
+    <TextView
+        android:id="@+id/tv_message_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_cancel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLength="20"
+        android:text="输入账号 10000000000 的密码"
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
+
+
+    <EditText
+        android:id="@+id/pw_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_message_title"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="输入登录密码"
+        android:inputType="textPassword"
+        android:maxLength="13"
+        android:textColor="@android:color/white"
+        android:textColorHint="#66FFFFFF"
+        android:textCursorDrawable="@drawable/shape_cursor_style"
+        android:textSize="26sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_next_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pw_text"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="忘记密码?"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_user_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:autoLink="all"
+                android:onClick="findPW"
+                android:text="找回密码"
+                android:textColor="#FFFF00"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_submit"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+</RelativeLayout>

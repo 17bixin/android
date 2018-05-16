@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gestures.heart.home.fragment.StickyNavLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.gestures.heart.home.fragment.MeWorkHeader
+        android:id="@id/id_stickynavlayout_topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isMe="false"/>
+
+    <RadioGroup
+        android:id="@+id/id_stickynavlayout_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_work"
+            style="@style/me_indicator_style"
+            android:checked="true"
+            android:text="作品 20" />
+
+        <RadioButton
+            android:id="@+id/rb_like"
+            style="@style/me_indicator_style"
+            android:text="喜欢 20" />
+
+    </RadioGroup>
+
+    <com.gestures.heart.ui.NoScrollViewPager
+        android:id="@id/id_stickynavlayout_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</com.gestures.heart.home.fragment.StickyNavLayout>

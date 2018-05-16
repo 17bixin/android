@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_bg_register"
+    tools:context="com.gestures.heart.login.LoginOrRegisterActivity">
+
+    <ImageView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="goCancel"
+        android:src="@mipmap/ic_back" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_cancel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="手机号注册"
+        android:textColor="@android:color/white"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/tv_message_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="输入 10000000000 收到的4位验证码"
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
+
+    <com.gestures.heart.ui.MNPasswordEditText
+        android:id="@+id/pw_note_text"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_message_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:focusableInTouchMode="true"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textSize="22sp"
+        app:mnPsw_background_color="#4Dffffff"
+        app:mnPsw_border_color="#ccffffff"
+        app:mnPsw_border_radius="2dp"
+        app:mnPsw_border_width="1dp"
+        app:mnPsw_item_margin="15dp"
+        app:mnPsw_mode="OriginalText"
+        app:mnPsw_style="StyleOneself"
+        app:mnPsw_text_color="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tv_message1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pw_note_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="设置登录密码"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/pw_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_message1"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="不少于6位密码"
+        android:maxLength="20"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="#66FFFFFF"
+        android:textCursorDrawable="@drawable/shape_cursor_style"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_mess_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pw_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="没有收到?重新发送"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_next"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_mess_text"
+        android:scaleType="fitXY"/>
+
+
+</RelativeLayout>

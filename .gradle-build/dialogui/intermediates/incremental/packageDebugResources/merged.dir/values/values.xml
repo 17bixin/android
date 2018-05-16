@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_white">#ffffff</color>
+    <color name="btn_alert">#222222</color>
+    <color name="color_text_black">#4c4c4c</color>
+    <color name="color_tie_bg">#efeff4</color>
+    <color name="color_tie_normal">#ffffff</color>
+    <color name="color_tie_select">#efeff4</color>
+    <color name="datepick_surance_blue">#3598da</color>
+    <color name="dialogui_btn_normal">#ffffff</color>
+    <color name="dialogui_btn_pressed">#eeeeee</color>
+    <color name="ios_btntext_blue">#007aff</color>
+    <color name="line_dd">#dddddd</color>
+    <color name="pickerview_bgColor_default">#FFFFFFFF</color>
+    <color name="pickerview_bgColor_overlay">#60000000</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="text_black">#333333</color>
+    <color name="text_black_light">#666666</color>
+    <color name="text_gray">#999999</color>
+    <color name="text_gray_light">#B3B3B3</color>
+    <color name="text_input_44">#444444</color>
+    <color name="text_item_33">#333333</color>
+    <color name="text_msg_33">#333333</color>
+    <color name="text_title_11">#111111</color>
+    <declare-styleable name="pickerview"><attr name="pickerview_gravity">
+            <enum name="center" value="17"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr><attr format="dimension" name="pickerview_textSize"/><attr format="color" name="pickerview_textColorOut"/><attr format="color" name="pickerview_textColorCenter"/><attr format="color" name="pickerview_dividerColor"/><attr format="float" name="pickerview_lineSpacingMultiplier"/></declare-styleable>
+    <dimen name="dialogui_btn_txt_size">14sp</dimen>
+    <dimen name="dialogui_height_mid">48dp</dimen>
+    <dimen name="dialogui_input_txt_size">14sp</dimen>
+    <dimen name="dialogui_item_txt_size">14sp</dimen>
+    <dimen name="dialogui_l_round_corner_radius">10dp</dimen>
+    <dimen name="dialogui_line_with">1dp</dimen>
+    <dimen name="dialogui_margin_mid">16dp</dimen>
+    <dimen name="dialogui_margin_small">8dp</dimen>
+    <dimen name="dialogui_margin_smid">14dp</dimen>
+    <dimen name="dialogui_max_with">360dp</dimen>
+    <dimen name="dialogui_msg_txt_size">14sp</dimen>
+    <dimen name="dialogui_round_corner_radius">5dp</dimen>
+    <dimen name="dialogui_title_txt_size">17sp</dimen>
+    <dimen name="dialogui_toast_margin">64dp</dimen>
+    <dimen name="pickerview_textsize">20sp</dimen>
+    <dimen name="pickerview_topbar_btn_textsize">17sp</dimen>
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <dimen name="pickerview_topbar_padding">20dp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">18sp</dimen>
+    <integer name="animation_default_duration">300</integer>
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="custom_dialog2" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 屏幕背景是否变暗 -->
+        <item name="android:backgroundDimAmount">0.3</item>
+    </style>
+    <style name="dialogui_bottom_style" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialogui_enter</item>
+        //进入时的动画
+        <item name="@android:windowExitAnimation">@anim/dialogui_exit</item>
+        //退出时的动画
+    </style>
+    <style name="dialogui_center_style" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialogui_enter_center</item>
+    </style>
+    <style name="dialogui_datepick_FontStyleNormalLightBlackMiddle" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="dialogui_datepick_dialog_untran" parent="dialogui_datepick_tran">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="dialogui_datepick_fontstyle_normal_blackmiddle" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="dialogui_datepick_fontstyle_normal_bluemiddle" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/datepick_surance_blue</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="dialogui_datepick_tran" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+    <style mce_bogus="1" name="pickerview_dialogAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pickerview_dialog_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/pickerview_dialog_scale_out</item>
+    </style>
+</resources>

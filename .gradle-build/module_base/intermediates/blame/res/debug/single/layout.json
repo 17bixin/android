@@ -1,0 +1,318 @@
+[
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/dialogui_holder_sheet.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/layout/dialogui_holder_sheet.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/c1e31cc9272efe69c9857a6c680e8ed4e35bd90d/output/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/tooltip.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/tooltip.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/item_gridview.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/module_base/src/main/res/layout/item_gridview.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/dialogui_loading_horizontal.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/layout/dialogui_loading_horizontal.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/layout/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/layout/design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/layout/design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/notification_action.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/cdef3956b5083c37d5b3b89bc4c95448f4c3f062/output/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/view_player.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/module_base/src/main/res/layout/view_player.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/pickerview_time.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/layout/pickerview_time.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/layout/design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/view.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/module_base/src/main/res/layout/view.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/pickerview_options.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/layout/pickerview_options.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/cdef3956b5083c37d5b3b89bc4c95448f4c3f062/output/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/notification_template_big_media_custom.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/c1e31cc9272efe69c9857a6c680e8ed4e35bd90d/output/res/layout/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/cdef3956b5083c37d5b3b89bc4c95448f4c3f062/output/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/dialogui_loading_vertical.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/layout/dialogui_loading_vertical.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/layout/design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/dialogui_popu_option_item.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/layout/dialogui_popu_option_item.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/c1e31cc9272efe69c9857a6c680e8ed4e35bd90d/output/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/design_bottom_navigation_item.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/layout/design_bottom_navigation_item.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/dot.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/module_base/src/main/res/layout/dot.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/banner.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/banner/intermediates/bundles/default/res/layout/banner.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/view_screen.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/module_base/src/main/res/layout/view_screen.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/dialogui_holder_alert.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/layout/dialogui_holder_alert.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/layout_basepickerview.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/layout/layout_basepickerview.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/c1e31cc9272efe69c9857a6c680e8ed4e35bd90d/output/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/dialogui_holder_item_tie.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/layout/dialogui_holder_item_tie.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/layout/design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/layout/design_layout_tab_text.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/notification_media_action.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/c1e31cc9272efe69c9857a6c680e8ed4e35bd90d/output/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/layout/design_navigation_menu.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/layout/design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/dialogui_toast.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/layout/dialogui_toast.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/layout/design_navigation_item_header.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/layout/design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/design_navigation_item.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/layout/design_navigation_item.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/quick_view_load_more.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/2fad2674be4c6defd752b4d4b8b8d0f4fe0c05ba/output/res/layout/quick_view_load_more.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/c1e31cc9272efe69c9857a6c680e8ed4e35bd90d/output/res/layout/notification_template_media_custom.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/include_pickerview_topbar.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/layout/include_pickerview_topbar.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/layout/design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/cdef3956b5083c37d5b3b89bc4c95448f4c3f062/output/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/c1e31cc9272efe69c9857a6c680e8ed4e35bd90d/output/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/c1e31cc9272efe69c9857a6c680e8ed4e35bd90d/output/res/layout/notification_template_lines_media.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/cdef3956b5083c37d5b3b89bc4c95448f4c3f062/output/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/gridview.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/module_base/src/main/res/layout/gridview.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/notification_template_big_media_narrow_custom.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/c1e31cc9272efe69c9857a6c680e8ed4e35bd90d/output/res/layout/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/res/merged/debug/layout/dialogui_popu_options.xml",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/res/layout/dialogui_popu_options.xml"
+    }
+]

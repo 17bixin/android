@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/module_base/src/main/assets"/><source path="/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/generated/assets/shaders/release"/></dataSet><dataSet config="release"><source path="/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/module_base/src/release/assets"/></dataSet></merger>

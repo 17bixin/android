@@ -1,0 +1,83 @@
+[
+    {
+        "outputFile": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/banner/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 65,
+                    "endOffset": 116
+                },
+                "from": {
+                    "file": "/Users/wangyuan4040163com/.android/build-cache/c1e31cc9272efe69c9857a6c680e8ed4e35bd90d/output/res/values-v24/values-v24.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 65,
+                        "endOffset": 116
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 121,
+                    "endColumn": 60,
+                    "endOffset": 177
+                },
+                "from": {
+                    "file": "/Users/wangyuan4040163com/.android/build-cache/c1e31cc9272efe69c9857a6c680e8ed4e35bd90d/output/res/values-v24/values-v24.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 121,
+                        "endColumn": 60,
+                        "endOffset": 177
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 182,
+                    "endColumn": 65,
+                    "endOffset": 243
+                },
+                "from": {
+                    "file": "/Users/wangyuan4040163com/.android/build-cache/c1e31cc9272efe69c9857a6c680e8ed4e35bd90d/output/res/values-v24/values-v24.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 182,
+                        "endColumn": 65,
+                        "endOffset": 243
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 248,
+                    "endColumn": 66,
+                    "endOffset": 310
+                },
+                "from": {
+                    "file": "/Users/wangyuan4040163com/.android/build-cache/c1e31cc9272efe69c9857a6c680e8ed4e35bd90d/output/res/values-v24/values-v24.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 248,
+                        "endColumn": 66,
+                        "endOffset": 310
+                    }
+                }
+            }
+        ]
+    }
+]

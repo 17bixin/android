@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:alens="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/F6F6F6"
+    tools:context="com.gestures.heart.settings.SettingsActivity">
+
+    <include
+        android:id="@+id/set_layout_head"
+        layout="@layout/include_layout_setting_head" />
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_below="@id/set_layout_head"
+        android:background="@color/set_line" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout style="@style/set_layout_style">
+
+                <TextView
+                    style="@style/set_text_style"
+                    android:text="头像" />
+
+                <com.gestures.heart.ui.CircleImageView
+                    android:id="@+id/iv_head"
+                    style="@style/set_person" />
+            </RelativeLayout>
+
+            <View style="@style/set_personal_line" />
+
+            <com.gestures.heart.ui.NiceTextView
+                android:id="@+id/tv_name"
+                style="@style/set_layout_alens_style_2"
+                alens:sLeftTextString="昵称"
+                alens:sRightTextMarginRight="40dp" />
+
+            <com.gestures.heart.ui.NiceTextView
+                android:id="@+id/tv_sex"
+                style="@style/set_layout_alens_style_2"
+                alens:sLeftTextString="性别"
+                alens:sRightTextMarginRight="40dp" />
+
+            <com.gestures.heart.ui.NiceTextView
+                android:id="@+id/tv_constellation"
+                style="@style/set_layout_alens_style_2"
+                alens:sLeftTextString="星座"
+                alens:sRightTextMarginRight="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="个人信息"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+            <com.gestures.heart.ui.NiceTextView
+                android:id="@+id/tv_addr"
+                style="@style/set_layout_alens_style_2"
+                alens:sLeftTextString="家乡"
+                alens:sRightTextMarginRight="40dp" />
+
+
+            <com.gestures.heart.ui.NiceTextView
+                android:id="@+id/tv_work"
+                style="@style/set_layout_alens_style_2"
+                alens:sLeftTextString="职业"
+                alens:sRightTextMarginRight="40dp" />
+
+            <com.gestures.heart.ui.NiceTextView
+                android:id="@+id/tv_addr2"
+                style="@style/set_layout_alens_style_2"
+                alens:sLeftTextString="经常出没的地方"
+                alens:sRightTextMarginRight="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="我的标签"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+            <RelativeLayout style="@style/set_layout_style">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/ic_setting_right" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="我的社交账号"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+            <RelativeLayout style="@style/set_layout_style">
+
+                <TextView
+                    android:id="@+id/tv_wx"
+                    style="@style/set_text_style"
+                    android:text="微信绑定" />
+
+                <ImageView
+                    style="@style/set_person"
+                    android:background="@mipmap/ic_set_wx"/>
+            </RelativeLayout>
+
+            <View style="@style/set_personal_line" />
+            <RelativeLayout style="@style/set_layout_style">
+
+                <TextView
+                    android:id="@+id/tv_qq"
+                    style="@style/set_text_style"
+                    android:text="QQ绑定" />
+
+                <ImageView
+                    style="@style/set_person"
+                    android:background="@mipmap/ic_set_qq"/>
+            </RelativeLayout>
+
+            <View style="@style/set_personal_line" />
+            <RelativeLayout style="@style/set_layout_style">
+
+                <TextView
+                    android:id="@+id/tv_wb"
+                    style="@style/set_text_style"
+                    android:text="微博绑定" />
+
+                <ImageView
+                    style="@style/set_person"
+                    android:background="@mipmap/ic_set_wb"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:alens="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/F6F6F6"
+    tools:context="com.gestures.heart.settings.SettingsActivity">
+
+    <include
+        android:id="@+id/set_layout_head"
+        layout="@layout/include_layout_setting_head" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/set_layout_head"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.gestures.heart.ui.NiceTextView
+                android:id="@+id/tv_person"
+                style="@style/set_layout_alens_style_1"
+                alens:sLeftTextString="个人资料" />
+
+            <com.gestures.heart.ui.NiceTextView
+                android:id="@+id/layout_account_safe"
+                style="@style/set_layout_alens_style_1"
+                android:layout_marginTop="8dp"
+                alens:sLeftTextString="账号与安全" />
+
+            <com.gestures.heart.ui.NiceTextView
+                android:id="@+id/layout_notice"
+                style="@style/set_layout_alens_style_2"
+                android:layout_marginTop="8dp"
+                alens:sLeftTextString="通知提醒" />
+
+            <com.gestures.heart.ui.NiceTextView
+                style="@style/set_layout_alens_style_2"
+                alens:sLeftTextString="隐私设置" />
+
+            <com.gestures.heart.ui.NiceTextView
+                android:id="@+id/layout_black_list"
+                style="@style/set_layout_alens_style_2"
+                alens:sLeftTextString="黑名单" />
+
+            <RelativeLayout
+                style="@style/set_layout_style"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    style="@style/set_text_style"
+                    android:text="WIFI环境下自动播放" />
+
+                <com.gestures.heart.ui.SwitchView
+                    android:id="@+id/switch_wifi"
+                    style="@style/set_switch_style" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/set_line" />
+
+            <RelativeLayout style="@style/set_layout_style">
+
+                <TextView
+                    style="@style/set_text_style"
+                    android:text="移动数据环境下提醒" />
+
+                <com.gestures.heart.ui.SwitchView
+                    android:id="@+id/switch_mobile_2g"
+                    style="@style/set_switch_style" />
+            </RelativeLayout>
+
+            <com.gestures.heart.ui.NiceTextView
+                android:id="@+id/tv_clear"
+                style="@style/set_layout_alens_style_2"
+                android:layout_marginTop="8dp"
+                alens:sLeftTextString="清理缓存"
+                alens:sRightTextMarginRight="40dp" />
+
+            <com.gestures.heart.ui.NiceTextView
+                android:id="@+id/tv_language"
+                style="@style/set_layout_alens_style_2"
+                android:layout_marginTop="8dp"
+                alens:sLeftTextString="切换语言"
+                alens:sRightTextMarginRight="40dp" />
+
+            <com.gestures.heart.ui.NiceTextView
+                android:id="@+id/tv_feed_back"
+                style="@style/set_layout_alens_style_2"
+                alens:sLeftTextString="问题反馈" />
+
+            <com.gestures.heart.ui.NiceTextView
+                style="@style/set_layout_alens_style_2"
+                alens:sLeftTextString="用户协议" />
+
+            <com.gestures.heart.ui.NiceTextView
+                style="@style/set_layout_alens_style_2"
+                alens:sLeftTextString="关于比心" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

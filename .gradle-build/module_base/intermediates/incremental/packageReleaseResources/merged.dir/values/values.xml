@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleProgressView"><attr format="color" name="cpv_progressNormalColor"/><attr format="color" name="cpv_progressReachColor"/><attr format="color" name="cpv_progressTextColor"/><attr format="dimension" name="cpv_progressTextSize"/><attr format="dimension" name="cpv_progressTextOffset"/><attr format="dimension" name="cpv_progressNormalSize"/><attr format="dimension" name="cpv_progressReachSize"/><attr format="dimension" name="cpv_radius"/><attr format="boolean" name="cpv_progressTextVisible"/><attr format="integer" name="cpv_progressStartArc"/><attr format="dimension" name="cpv_progressTextSkewX"/><attr format="string" name="cpv_progressTextPrefix"/><attr format="string" name="cpv_progressTextSuffix"/><attr format="color" name="cpv_innerBackgroundColor"/><attr format="enum" name="cpv_progressStyle">
+            <enum name="Normal" value="0"/>
+            <enum name="FillInner" value="1"/>
+            <enum name="FillInnerArc" value="2"/>
+        </attr><attr format="color" name="cpv_innerProgressColor"/><attr format="dimension" name="cpv_innerPadding"/><attr format="color" name="cpv_outerColor"/><attr format="dimension" name="cpv_outerSize"/><attr format="boolean" name="cpv_reachCapRound"/></declare-styleable>
+    <declare-styleable name="ShapeImageViewStyle"><attr format="color" name="riv_border_color"/><attr format="dimension" name="riv_border_width"/><attr format="dimension" name="riv_corner_radius"/><attr format="boolean" name="riv_is_circle"/><attr format="color" name="riv_pressed_border_color"/><attr format="dimension" name="riv_pressed_border_width"/><attr format="color" name="riv_pressed_mask_color"/><attr format="boolean" name="riv_pressed_mode_enabled"/></declare-styleable>
+    <declare-styleable name="VideoPlayer"><attr format="boolean" name="autoPlay"/><attr format="boolean" name="showControl"/></declare-styleable>
+    <string name="app_name">module_base</string>
+</resources>

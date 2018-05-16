@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/shape_follow_item_text1">
+
+        <com.gestures.heart.ui.SelectableRoundedImageView
+            android:id="@+id/image0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            app:sriv_left_bottom_corner_radius="4dp"
+            app:sriv_left_top_corner_radius="4dp"
+            app:sriv_right_bottom_corner_radius="4dp"
+            app:sriv_right_top_corner_radius="4dp"/>
+
+
+        <com.gestures.heart.ui.SelectableRoundedImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            app:sriv_left_bottom_corner_radius="4dp"
+            app:sriv_left_top_corner_radius="4dp"
+            app:sriv_right_bottom_corner_radius="4dp"
+            app:sriv_right_top_corner_radius="4dp"/>
+
+
+        <com.gestures.heart.ui.SlantedTextView
+            android:id="@+id/slv_left_bt_tri"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            app:slantedBackgroundColor="@color/e6_register_start"
+            app:slantedLength="28dp"
+            app:slantedMode="left_bottom_triangle"
+            app:slantedText="主"
+            app:slantedTextSize="8sp" />
+
+
+    </RelativeLayout>
+
+    <com.gestures.heart.ui.SelectableRoundedImageView
+        android:id="@+id/image2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="2dp"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        app:sriv_left_bottom_corner_radius="4dp"
+        app:sriv_left_top_corner_radius="4dp"
+        app:sriv_right_bottom_corner_radius="4dp"
+        app:sriv_right_top_corner_radius="4dp"/>
+
+    <com.gestures.heart.ui.SelectableRoundedImageView
+        android:id="@+id/image3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="2dp"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        app:sriv_left_bottom_corner_radius="4dp"
+        app:sriv_left_top_corner_radius="4dp"
+        app:sriv_right_bottom_corner_radius="4dp"
+        app:sriv_right_top_corner_radius="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_follow_count"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_follow_item_text"
+        android:gravity="center"
+        android:text="30"
+        android:textColor="@android:color/white"
+        android:textSize="23sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_follow"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_follow_item_text1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_me_take" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跟拍"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,1 @@
+D com/alens/utils/SelectorFactory$ShapeSelector$Shape

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_bg_register"
+    tools:context="com.gestures.heart.login.LoginOrRegisterActivity">
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:onClick="goCancel"
+        android:text="取消"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_message_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_cancel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="手机快速注册，有利于账号安全与体验"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/et_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_message_title"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="输入手机号码"
+        android:inputType="number"
+        android:maxLength="13"
+        android:textColor="@android:color/white"
+        android:textColorHint="#66FFFFFF"
+        android:textCursorDrawable="@drawable/shape_cursor_style"
+        android:textSize="26sp" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/et_tel">
+
+        <RelativeLayout
+            android:id="@+id/rl_login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_mes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="其他登录方式"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_mes"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_wx"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_wx" />
+
+                <ImageView
+                    android:id="@+id/iv_qq"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_qq" />
+
+                <ImageView
+                    android:id="@+id/iv_wb"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_wb" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_next_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="继续表示你同意"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_user_agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:autoLink="all"
+                    android:onClick="gotoAgree"
+                    android:text="@string/agree"
+                    android:textColor="@color/tel_name_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_next"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

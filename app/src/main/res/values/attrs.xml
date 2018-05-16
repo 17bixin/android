@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="MNPasswordEditText">
+
+        <!--密码框的颜色-->
+        <attr name="mnPsw_border_color" format="color"/>
+        <!--密码文字的颜色,圆形密码颜色-->
+        <attr name="mnPsw_text_color" format="color"/>
+        <!--密码框的圆角-->
+        <attr name="mnPsw_border_radius" format="dimension"/>
+        <!--密码框的线的大小-->
+        <attr name="mnPsw_border_width" format="dimension"/>
+        <!--密码框的每个间隔,只有样式2才起作用-->
+        <attr name="mnPsw_item_margin" format="dimension"/>
+        <!--密码框背景色-->
+        <attr name="mnPsw_background_color" format="color"/>
+        <!--密码框输入的模式:4.明文,3.文字,2.图片,1.圆形-->
+        <attr name="mnPsw_mode" format="enum">
+            <!--圆形默认-->
+            <enum name="Circle" value="1"/>
+            <!--图片-->
+            <enum name="Bitmap" value="2"/>
+            <!--文本-->
+            <enum name="Text" value="3"/>
+            <!--原始-->
+            <enum name="OriginalText" value="4"/>
+        </attr>
+        <!--密码框样式: 1.连在一起 2.分开单独显示-->
+        <attr name="mnPsw_style" format="enum">
+            <!--连在一起-->
+            <enum name="StyleDefault" value="1"/>
+            <!--单独-->
+            <enum name="StyleOneself" value="2"/>
+        </attr>
+        <!--密码文字遮盖-->
+        <attr name="mnPsw_cover_text" format="string"/>
+        <!--密码图片遮盖-->
+        <attr name="mnPsw_cover_bitmap_id" format="reference"/>
+        <!--密码圆形遮盖颜色-->
+        <attr name="mnPsw_cover_circle_color" format="color"/>
+        <!--密码圆形遮盖半径-->
+        <attr name="mnPsw_cover_circle_radius" format="dimension"/>
+        <!--密码图片遮盖长宽-->
+        <attr name="mnPsw_cover_bitmap_width" format="dimension"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="StickyScrollView">
+        <attr name="stuckShadowHeight" format="dimension" />
+        <attr name="stuckShadowDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="BGASwipeItemLayout">
+        <attr name="bga_sil_swipeDirection" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="bga_sil_bottomMode" format="enum">
+            <enum name="pullOut" value="0" />
+            <enum name="layDown" value="1" />
+        </attr>
+        <attr name="bga_sil_springDistance" format="dimension" />
+        <attr name="bga_sil_swipeAble" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean"/>
+        <attr name="ios" format="boolean"/>
+        <attr name="leftSwipe" format="boolean"/>
+    </declare-styleable>
+
+    <attr name="indexBarTextSize" format="dimension" />
+
+    <declare-styleable name="IndexBar">
+        <attr name="indexBarTextSize" />
+        <attr name="indexBarPressBackground" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MeWorkHeader">
+        <attr name="isMe" format="boolean"/>
+    </declare-styleable>
+
+    <!-- 倾斜 TextView -->
+    <declare-styleable name="SlantedTextView">
+        <attr name="slantedTextSize" format="dimension"/>
+        <attr name="slantedBackgroundColor" format="color"/>
+        <attr name="slantedText" format="string"/>
+        <attr name="slantedTextColor" format="color"/>
+        <attr name="slantedLength" format="dimension"/>
+        <attr name="slantedMode" format="enum">
+            <enum name="left" value="0"></enum>
+            <enum name="right" value="1"></enum>
+            <enum name="left_bottom" value="2"></enum>
+            <enum name="right_bottom" value="3"></enum>
+            <enum name="left_triangle" value="4"></enum>
+            <enum name="right_triangle" value="5"></enum>
+            <enum name="left_bottom_triangle" value="6"></enum>
+            <enum name="right_bottom_triangle" value="7"></enum>
+        </attr>
+    </declare-styleable>
+
+
+    <!-- 设置 -->
+
+    <declare-styleable name="NiceTextView">
+        <attr name="sLeftIconRes" format="reference"/>
+        <attr name="sRightIconRes" format="reference"/>
+        <attr name="sRightCheckBoxRes" format="reference"/>
+
+        <attr name="sLeftTextString" format="string"/>
+        <attr name="sCenterTextString" format="string"/>
+        <attr name="sRightTextString" format="string"/>
+
+        <attr name="sLeftTopTextString" format="string"/>
+        <attr name="sLeftBottomTextString" format="string"/>
+        <attr name="sLeftBottomTextString2" format="string"/>
+
+
+        <attr name="sTopLineMargin" format="dimension"/>
+        <attr name="sBottomLineMargin" format="dimension"/>
+        <attr name="sBothLineMargin" format="dimension"/>
+
+        <attr name="sLeftIconMarginLeft" format="dimension"/>
+        <attr name="sLeftTextMarginLeft" format="dimension"/>
+
+        <attr name="sLeftTopTextMarginLeft" format="dimension"/>
+        <attr name="sLeftBottomTextMarginLeft" format="dimension"/>
+        <attr name="sLeftBottomTextMarginLeft2" format="dimension"/>
+
+        <attr name="sRightIconMarginRight" format="dimension"/>
+        <attr name="sRightTextMarginRight" format="dimension"/>
+        <attr name="sRightCheckBoxMarginRight" format="dimension"/>
+        <attr name="sRightCheckBoxShow" format="boolean"/>
+        <attr name="sIsChecked" format="boolean"/>
+        <attr name="sUseRipple" format="boolean"/>
+
+        <attr name="sLeftTextSize" format="dimension"/>
+        <attr name="sLeftTopTextSize" format="dimension"/>
+        <attr name="sLeftBottomTextSize" format="dimension"/>
+        <attr name="sLeftBottomTextSize2" format="dimension"/>
+        <attr name="sRightTextSize" format="dimension"/>
+        <attr name="sCenterTextSize" format="dimension"/>
+
+        <attr name="sBackgroundColor" format="color"/>
+        <attr name="sLeftTextColor" format="color"/>
+        <attr name="sLeftTopTextColor" format="color"/>
+        <attr name="sLeftBottomTextColor" format="color"/>
+        <attr name="sLeftBottomTextColor2" format="color"/>
+        <attr name="sRightTextColor" format="color"/>
+        <attr name="sCenterTextColor" format="color"/>
+
+        <attr name="sLineShow" format="enum">
+            <enum name="none" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="bottom" value="2"/>
+            <enum name="both" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SwitchView">
+        <attr name="hasShadow" format="boolean"/>
+        <attr name="primaryColor" format="color"/>
+        <attr name="primaryColorDark" format="color"/>
+        <attr name="isOpened" format="boolean"/>
+    </declare-styleable>
+
+
+</resources>

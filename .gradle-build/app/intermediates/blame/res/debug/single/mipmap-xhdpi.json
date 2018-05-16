@@ -1,7 +1,7 @@
 [
     {
-        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_flash_off.png",
-        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_flash_off.png"
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_like.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_like.png"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/gradient.png",
@@ -16,32 +16,20 @@
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_arrow_right.png"
     },
     {
-        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/electric.png",
-        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/electric.png"
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_next_0.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_next_0.png"
     },
     {
-        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_record_delay.png",
-        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_record_delay.png"
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_tab_video_0.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_tab_video_0.png"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/camera_normal.png",
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/camera_normal.png"
     },
     {
-        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/item0204.png",
-        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/item0204.png"
-    },
-    {
-        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_top_more.png",
-        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_top_more.png"
-    },
-    {
-        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/nature.png",
-        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/nature.png"
-    },
-    {
-        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_flash_on.png",
-        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_flash_on.png"
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_msg_notice.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_msg_notice.png"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_camera_0.png",
@@ -52,24 +40,44 @@
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/bgseg.png"
     },
     {
-        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/yazui.png",
-        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/yazui.png"
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_wel_2.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_wel_2.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/icon_qq.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/icon_qq.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_tab_mes_1.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_tab_mes_1.png"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/tokyo.png",
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/tokyo.png"
     },
     {
-        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_music_top.png",
-        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_music_top.png"
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/image_checked.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/image_checked.png"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/iv_back_black.png",
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/iv_back_black.png"
     },
     {
-        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/fu_zh_duzui.png",
-        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/fu_zh_duzui.png"
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_me_set.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_me_set.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/icon_wx.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/icon_wx.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_tab_recreation_0.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_tab_recreation_0.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_money.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_money.png"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_record_play.png",
@@ -80,12 +88,32 @@
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_face_btn.png"
     },
     {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_tab_mes_0.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_tab_mes_0.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_genpai.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_genpai.png"
+    },
+    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/warm.png",
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/warm.png"
     },
     {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_msg_wait.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_msg_wait.png"
+    },
+    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/delta.png",
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/delta.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_tab_recreation_1.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_tab_recreation_1.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/loading_icon.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/loading_icon.png"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_camera_1.png",
@@ -96,12 +124,20 @@
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_back.png"
     },
     {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_nice.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_nice.png"
+    },
+    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/lixiaolong.png",
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/lixiaolong.png"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher_round.png",
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_msg_right.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_msg_right.png"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
@@ -120,8 +156,16 @@
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_record_arrow.png"
     },
     {
-        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_beauty_on.png",
-        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_beauty_on.png"
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_me_like.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_me_like.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_set_wx.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_set_wx.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_recharge_icon.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_recharge_icon.png"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/matianyu.png",
@@ -140,8 +184,12 @@
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/mood.png"
     },
     {
-        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/slowlived.png",
-        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/slowlived.png"
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_submit_0.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_submit_0.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_zhifubao_icon.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_zhifubao_icon.png"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_beauty_off.png",
@@ -150,5 +198,165 @@
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/camera_front.png",
         "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/camera_front.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_flash_off.png",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_flash_off.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_yue.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_yue.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_tanmu.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_tanmu.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_seting_send.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_seting_send.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/electric.png",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/electric.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_record_delay.png",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_record_delay.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_setting_right.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_setting_right.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/item0204.png",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/item0204.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_top_more.png",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_top_more.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/nature.png",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/nature.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_set_add.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_set_add.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_flash_on.png",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_flash_on.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_gift.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_gift.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_tab_me_0.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_tab_me_0.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/yazui.png",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/yazui.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_submit_1.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_submit_1.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_music_top.png",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_music_top.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_music.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_music.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_income_icon.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_income_icon.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/fu_zh_duzui.png",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/fu_zh_duzui.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_set_wb.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_set_wb.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_tab_me_1.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_tab_me_1.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_me_more.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_me_more.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/icon_right.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/icon_right.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_tab_video_1.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_tab_video_1.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_challeng_title_icon.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_challeng_title_icon.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_set_qq.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_set_qq.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_challeng_more.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_challeng_more.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_shape.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_shape.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_back.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_back.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_close.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_close.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/icon_wb.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/icon_wb.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_beauty_on.png",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_beauty_on.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_next_1.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_next_1.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_wel_1.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_wel_1.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_me_take.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_me_take.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/slowlived.png",
+        "source": "/Users/wangyuan4040163com/GesturesHeart/app/src/main/res/mipmap-xhdpi/slowlived.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/iv_back_black.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/iv_back_black.png"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/mipmap-xhdpi/ic_follow.png",
+        "source": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/res/mipmap-xhdpi/ic_follow.png"
     }
 ]

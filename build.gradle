@@ -2,6 +2,9 @@
 buildscript {
     repositories {
         jcenter()
+        maven {
+            url "http://mvn.leancloud.cn/nexus/content/repositories/releases"
+        }
     }
     apply from: 'config.gradle'
     dependencies {
@@ -17,6 +20,9 @@ allprojects {
         jcenter()
         maven { url "https://jitpack.io" }
         maven { url 'https://maven.google.com' }
+        maven {
+            url "http://mvn.leancloud.cn/nexus/content/repositories/releases"
+        }
     }
 
     group = 'com.gestures.heart'

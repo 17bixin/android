@@ -3,29 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     android:orientation="vertical"
     tools:context="com.gestures.heart.MainActivity">
 
-    <TextView
-        android:id="@+id/tv_video_record"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:textColor="@android:color/white"
-        android:padding="10dp"
-        android:text="分段视频录制"
-        android:gravity="center"
-        android:layout_margin="30dp"/>
+    <!--<View-->
+        <!--android:id="@+id/top_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp" />-->
 
-    <TextView
-        android:id="@+id/tv_video_list"
+    <FrameLayout
+        android:id="@+id/fl_content"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:textColor="@android:color/white"
-        android:padding="10dp"
-        android:text="视频列表 ——> 裁剪"
-        android:gravity="center"
-        android:layout_margin="30dp"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
+    <com.gestures.heart.ui.tab.CommonTabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#ffffff"
+        xmlns:tl="http://schemas.android.com/apk/res-auto"
+        tl:tl_iconHeight="23dp"
+        tl:tl_iconWidth="23dp"
+        tl:tl_indicator_color="@color/e6_register_start"
+        tl:tl_indicator_height="0dp"
+        tl:tl_textSelectColor="@color/e6_register_start"
+        tl:tl_textUnselectColor="@color/gray"
+        tl:tl_textsize="12sp"
+        tl:tl_underline_color="#DDDDDD"
+        tl:tl_underline_height="1dp"/>
 </LinearLayout>

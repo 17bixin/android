@@ -6,11 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
-import com.gestures.heart.base.immersion.ImmersionBar;
-import com.gestures.heart.base.networkstate.NetInfo;
-import com.gestures.heart.base.networkstate.NetworkStateListener;
-import com.gestures.heart.base.networkstate.NetworkStateReceiver;
-import com.gestures.heart.base.utils.L;
+import com.alens.base.immersion.ImmersionBar;
+import com.alens.base.networkstate.NetInfo;
+import com.alens.base.networkstate.NetworkStateListener;
+import com.alens.base.networkstate.NetworkStateReceiver;
+import com.alens.utils.L;
 
 /**
  * 沉浸式状态栏

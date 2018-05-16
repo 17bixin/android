@@ -1,18 +1,16 @@
 ext {
 
-    // 2017 - 12 - 19 Alens
-
     externalAndroidBuildGradlePlugin = 'com.android.tools.build:gradle:2.3.3'
 
-    externalAndroidSupportV4 = 'com.android.support:support-v4:23.0.1'
-    externalAndroidAppCompatV7 = 'com.android.support:appcompat-v7:26.+'
-    externalAndroidSupportV13 = 'com.android.support:support-v13:23.4.0'
-    externalAndroidDesign = 'com.android.support:design:26.+'
-    externalAnnotations = 'com.android.support:support-annotations:25.3.1'
-    externalConstraint = 'com.android.support.constraint:constraint-layout:1.0.2'
+    externalAndroidSupportV4 = 'com.android.support:support-v4:27.0.2'
+    externalAndroidAppCompatV7 = 'com.android.support:appcompat-v7:27.0.2'
+//    externalAndroidSupportV13 = 'com.android.support:support-v13:23.4.0'
+    externalAndroidDesign = 'com.android.support:design:27.0.2'
+    externalAnnotations = 'com.android.support:support-annotations:27.0.2'
+//    externalConstraint = 'com.android.support.constraint:constraint-layout:1.0.2'
 
     // RecyclerView
-    externalRecyclerView = 'com.android.support:recyclerview-v7:26.1.0'
+    externalRecyclerView = 'com.android.support:recyclerview-v7:27.0.2'
 
     // RecyclerView Adapter 封装
     externalReAdapterHelper = 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
@@ -22,31 +20,28 @@ ext {
     // GSON
     externalGSON = 'com.google.code.gson:gson:2.8.1'
 
-    externalFastJson = 'com.alibaba:fastjson:1.2.5'
+//    externalFastJson = 'com.alibaba:fastjson:1.2.5'
 
 //   图片加载  glide 4.0
-    externalGlide = 'com.github.bumptech.glide:glide:4.3.1'
-    externalAnnotationPro = 'com.github.bumptech.glide:compiler:4.3.1'
-    externalGlideOkHttp = "com.github.bumptech.glide:okhttp3-integration:4.3.1"
+    externalGlide = 'com.github.bumptech.glide:glide:3.7.0'
+    externalGlideTF =  'jp.wasabeef:glide-transformations:2.0.1'
+
+//    externalAnnotationPro = 'com.github.bumptech.glide:compiler:4.0.0'
+//    externalGlideOkHttp = "com.github.bumptech.glide:okhttp3-integration:4.0.0"
 
     // 注解
     externalButterknife = 'com.jakewharton:butterknife:8.5.1'
     externalAPButterknife = 'com.jakewharton:butterknife-compiler:8.5.1'
 
-    // 圆形 ImageView
-    externalCirCleImg = 'de.hdodenhof:circleimageview:2.2.0'
     // 滚轮 时间选择器
     externalTimePicker = 'com.contrarywind:Android-PickerView:3.2.6'
 
     externalPinYin = 'com.github.promeg:tinypinyin:1.0.0'
 
-    externalRxJava = 'io.reactivex.rxjava2:rxjava:2.0.5'
-    externalRxAndroid = 'io.reactivex.rxjava2:rxandroid:2.0.1'
-
-    externalCompileSdkVersion = 26
-    externalBuildToolsVersion = "26.0.2"
+    externalCompileSdkVersion = 27
+    externalBuildToolsVersion = "27.0.2"
     externalMinSdkVersion = 18
-    externalTargetSdkVersion = 26
+    externalTargetSdkVersion = 27
 
     projectVersionCode = 1
     projectVersion = '1.0.0'

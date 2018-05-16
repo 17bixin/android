@@ -1,9 +1,131 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <style name="AppTheme.NoTitle">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <!--
+        true ： IllegalStateException: Only fullscreen opaque activities can request orientation
+        -->
+    </style>
+
+    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="TabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">1dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="loading_dialog_style" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="circleProgressBarStyle">
+        <item name="android:indeterminateDrawable">@drawable/rotate_loading_icon</item>
+        <item name="android:indeterminateDuration">1500</item>
+    </style>
+
+    <style name="set_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="set_language_switch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="sRightCheckBoxRes">@drawable/selector_ic_sla</item>
+        <item name="sBottomLineMargin">5dp</item>
+    </style>
+
+    <style name="set_layout_alens_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="sBottomLineMargin">5dp</item>
+        <item name="sRightIconRes">@mipmap/ic_setting_right</item>
+    </style>
+
+    <style name="set_layout_alens_style_1" parent="set_layout_alens_style">
+        <item name="sLineShow">none</item>
+    </style>
+    <style name="set_layout_alens_style_2" parent="set_layout_alens_style">
+        <item name="sBottomLineMargin">5dp</item>
+    </style>
+
+    <style name="set_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">#FF373737</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="set_switch_style">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="primaryColor">@color/register_start</item>
+        <item name="primaryColorDark">@color/register_start</item>
+        <item name="isOpened">true</item>
+    </style>
+
+    <style name="set_personal_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@color/set_line</item>
+    </style>
+
+    <style name="set_person">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="me_indicator_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/selector_me_indicator</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/selector_me_indicator_text</item>
+    </style>
+
+    <style name="CustomGiftDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
     </style>
 
 </resources>

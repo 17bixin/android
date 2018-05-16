@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/animator-v21/design_appbar_state_list_animator.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/animator-v21/design_appbar_state_list_animator.xml"
+    },
+    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/animator-v21/design_appbar_state_list_animator.xml",
         "source": "/Users/wangyuan4040163com/.android/build-cache/c4098f8757030c21b952aec6b002c96b19d70194/output/res/animator-v21/design_appbar_state_list_animator.xml"
     }

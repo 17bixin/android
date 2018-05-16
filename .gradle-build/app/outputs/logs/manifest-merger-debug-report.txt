@@ -1,185 +1,322 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:2:1-45:12
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:2:1-145:12
 	package
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:3:5-33
-		INJECTED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:3:5-33
+		INJECTED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml
-uses-permission#android.permission.CAMERA
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:5:5-65
-	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:5:22-62
-uses-permission#android.permission.RECORD_AUDIO
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:6:5-71
-	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:6:22-68
-uses-permission#android.permission.FLASHLIGHT
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:7:5-69
-	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:7:22-66
+		INJECTED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:8:5-81
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:5:5-81
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:8:22-78
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:5:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:9:5-80
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:6:5-80
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:9:22-77
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:6:22-77
 uses-permission#android.permission.INTERNET
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:10:5-67
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:7:5-67
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:10:22-64
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:7:22-64
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:11:5-79
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:8:5-79
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:11:22-76
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:8:22-76
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:12:5-76
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:9:5-76
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:12:22-73
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:9:22-73
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:13:5-79
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:13:22-76
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:10:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:14:5-76
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:11:5-76
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:14:22-73
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:11:22-73
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:15:5-68
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:12:5-68
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:15:22-65
-uses-feature#android.hardware.camera
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:17:5-60
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:12:22-65
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:14:5-81
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:17:19-57
-uses-feature#0x00020000
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:18:5-20:35
-	android:glEsVersion
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:19:9-41
-	android:required
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:20:9-32
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:14:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:15:5-66
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:15:22-63
 application
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:22:5-43:19
-MERGED from [com.android.support:design:26.1.0] /Users/wangyuan4040163com/.android/build-cache/c4098f8757030c21b952aec6b002c96b19d70194/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/wangyuan4040163com/.android/build-cache/735845b4ca723e1aa94cef2d03f645134a2d40b5/output/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:transition:26.1.0] /Users/wangyuan4040163com/.android/build-cache/a98268184c6ef9d841d87fbfdcffa2cf0fbebcac/output/AndroidManifest.xml:22:5-26:19
-MERGED from [org.adw.library:discrete-seekbar:1.0.1] /Users/wangyuan4040163com/.android/build-cache/3cf61237b4642e10d66bab962afb075593dbde08/output/AndroidManifest.xml:27:5-28:19
-MERGED from [com.github.dfqin:grantor:2.4] /Users/wangyuan4040163com/.android/build-cache/032d4c9f24ae70170c3128f9646b6a84006ff5e0/output/AndroidManifest.xml:11:5-18:19
-MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] /Users/wangyuan4040163com/.android/build-cache/b217db7189da83e7eaa4ad055ec0982f838a577d/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/wangyuan4040163com/.android/build-cache/989d3fa24849f74ecd517670d1856fa74704dea7/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/wangyuan4040163com/.android/build-cache/01e5acbdb97b6203414cbdcb1acb06bac3b7a386/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/wangyuan4040163com/.android/build-cache/83f72e54052ded168ad95abe5e3bf235f8c5bb53/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/wangyuan4040163com/.android/build-cache/7d182420e00678be21e55335c57d922edc9efa35/output/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/wangyuan4040163com/.android/build-cache/c4f5597ea855d595963f5521df549de77fdec590/output/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/wangyuan4040163com/.android/build-cache/c317c37d77554341ac9d13eb3afae9636afbe640/output/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] /Users/wangyuan4040163com/.android/build-cache/6d85c9f8b56dce98100dbfa36ab24eed0ffbddc5/output/AndroidManifest.xml:25:5-29:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/wangyuan4040163com/.android/build-cache/73891a9a8e15c486062818881e3e7832bcd9030d/output/AndroidManifest.xml:24:5-28:19
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:17:5-143:19
+MERGED from [com.gestures.heart:module_base:1.0.0] /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/bundles/default/AndroidManifest.xml:11:5-15:19
+MERGED from [com.gestures.heart:okhttp3:1.0.0] /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/okhttp3/intermediates/bundles/default/AndroidManifest.xml:11:5-15:19
+MERGED from [com.gestures.heart:banner:1.0.0] /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/banner/intermediates/bundles/default/AndroidManifest.xml:11:5-14:19
 	android:label
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:26:9-41
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:21:9-41
 	android:supportsRtl
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:28:9-35
-	android:roundIcon
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:27:9-54
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:22:9-35
 	android:allowBackup
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:24:9-35
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:19:9-35
 	android:icon
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:25:9-43
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:20:9-43
 	android:theme
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:29:9-40
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:23:9-40
 	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:23:9-29
-activity#com.gestures.heart.MainActivity
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:30:9-36:20
-	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:30:19-47
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:31:13-35:29
-action#android.intent.action.MAIN
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:32:17-69
-	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:32:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:34:17-77
-	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:34:27-74
-activity#com.gestures.heart.record.FUDualInputToTextureExampleActivity
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:37:9-80
-	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:37:19-77
-activity#com.gestures.heart.crop.VideoCropActivity
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:38:9-41:52
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:18:9-33
+activity#com.gestures.heart.WelcomeActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:24:9-34:20
 	android:screenOrientation
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:41:13-49
-	android:launchMode
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:40:13-44
-	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:39:13-51
-activity#com.gestures.heart.crop.VideoListActivity
-ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:42:9-69
-	android:name
-		ADDED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml:42:19-57
-uses-sdk
-INJECTED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:design:26.1.0] /Users/wangyuan4040163com/.android/build-cache/c4098f8757030c21b952aec6b002c96b19d70194/output/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/wangyuan4040163com/.android/build-cache/735845b4ca723e1aa94cef2d03f645134a2d40b5/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.1.0] /Users/wangyuan4040163com/.android/build-cache/a98268184c6ef9d841d87fbfdcffa2cf0fbebcac/output/AndroidManifest.xml:20:5-44
-MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34] /Users/wangyuan4040163com/.android/build-cache/2fad2674be4c6defd752b4d4b8b8d0f4fe0c05ba/output/AndroidManifest.xml:7:5-9:41
-MERGED from [org.adw.library:discrete-seekbar:1.0.1] /Users/wangyuan4040163com/.android/build-cache/3cf61237b4642e10d66bab962afb075593dbde08/output/AndroidManifest.xml:23:5-25:41
-MERGED from [com.github.dfqin:grantor:2.4] /Users/wangyuan4040163com/.android/build-cache/032d4c9f24ae70170c3128f9646b6a84006ff5e0/output/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:26.1.0] /Users/wangyuan4040163com/.android/build-cache/b217db7189da83e7eaa4ad055ec0982f838a577d/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/wangyuan4040163com/.android/build-cache/989d3fa24849f74ecd517670d1856fa74704dea7/output/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/wangyuan4040163com/.android/build-cache/01e5acbdb97b6203414cbdcb1acb06bac3b7a386/output/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/wangyuan4040163com/.android/build-cache/83f72e54052ded168ad95abe5e3bf235f8c5bb53/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/wangyuan4040163com/.android/build-cache/7d182420e00678be21e55335c57d922edc9efa35/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/wangyuan4040163com/.android/build-cache/c4f5597ea855d595963f5521df549de77fdec590/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/wangyuan4040163com/.android/build-cache/c317c37d77554341ac9d13eb3afae9636afbe640/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.1.0] /Users/wangyuan4040163com/.android/build-cache/6d85c9f8b56dce98100dbfa36ab24eed0ffbddc5/output/AndroidManifest.xml:21:5-23:58
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/wangyuan4040163com/.android/build-cache/73891a9a8e15c486062818881e3e7832bcd9030d/output/AndroidManifest.xml:20:5-22:41
-	tools:overrideLibrary
-		ADDED from [com.android.support:design:26.1.0] /Users/wangyuan4040163com/.android/build-cache/c4098f8757030c21b952aec6b002c96b19d70194/output/AndroidManifest.xml:23:9-59
-	android:targetSdkVersion
-		INJECTED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml
-	android:minSdkVersion
-		INJECTED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/wangyuan4040163com/GesturesHeart/app/src/main/AndroidManifest.xml
-meta-data#android.support.VERSION
-ADDED from [com.android.support:design:26.1.0] /Users/wangyuan4040163com/.android/build-cache/c4098f8757030c21b952aec6b002c96b19d70194/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/wangyuan4040163com/.android/build-cache/735845b4ca723e1aa94cef2d03f645134a2d40b5/output/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:transition:26.1.0] /Users/wangyuan4040163com/.android/build-cache/a98268184c6ef9d841d87fbfdcffa2cf0fbebcac/output/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.1.0] /Users/wangyuan4040163com/.android/build-cache/b217db7189da83e7eaa4ad055ec0982f838a577d/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/wangyuan4040163com/.android/build-cache/989d3fa24849f74ecd517670d1856fa74704dea7/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] /Users/wangyuan4040163com/.android/build-cache/01e5acbdb97b6203414cbdcb1acb06bac3b7a386/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] /Users/wangyuan4040163com/.android/build-cache/83f72e54052ded168ad95abe5e3bf235f8c5bb53/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/wangyuan4040163com/.android/build-cache/7d182420e00678be21e55335c57d922edc9efa35/output/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/wangyuan4040163com/.android/build-cache/c4f5597ea855d595963f5521df549de77fdec590/output/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-core-ui:26.1.0] /Users/wangyuan4040163com/.android/build-cache/c317c37d77554341ac9d13eb3afae9636afbe640/output/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] /Users/wangyuan4040163com/.android/build-cache/6d85c9f8b56dce98100dbfa36ab24eed0ffbddc5/output/AndroidManifest.xml:26:9-28:38
-	android:value
-		ADDED from [com.android.support:design:26.1.0] /Users/wangyuan4040163com/.android/build-cache/c4098f8757030c21b952aec6b002c96b19d70194/output/AndroidManifest.xml:28:13-35
-	android:name
-		ADDED from [com.android.support:design:26.1.0] /Users/wangyuan4040163com/.android/build-cache/c4098f8757030c21b952aec6b002c96b19d70194/output/AndroidManifest.xml:27:13-51
-activity#com.github.dfqin.grantor.PermissionActivity
-ADDED from [com.github.dfqin:grantor:2.4] /Users/wangyuan4040163com/.android/build-cache/032d4c9f24ae70170c3128f9646b6a84006ff5e0/output/AndroidManifest.xml:15:9-17:55
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:27:13-49
+	android:configChanges
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:26:13-74
 	android:theme
-		ADDED from [com.github.dfqin:grantor:2.4] /Users/wangyuan4040163com/.android/build-cache/032d4c9f24ae70170c3128f9646b6a84006ff5e0/output/AndroidManifest.xml:17:13-52
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:28:13-52
 	android:name
-		ADDED from [com.github.dfqin:grantor:2.4] /Users/wangyuan4040163com/.android/build-cache/032d4c9f24ae70170c3128f9646b6a84006ff5e0/output/AndroidManifest.xml:16:13-71
-meta-data#android.arch.lifecycle.VERSION
-ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/wangyuan4040163com/.android/build-cache/73891a9a8e15c486062818881e3e7832bcd9030d/output/AndroidManifest.xml:25:9-27:47
-	android:value
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/wangyuan4040163com/.android/build-cache/73891a9a8e15c486062818881e3e7832bcd9030d/output/AndroidManifest.xml:27:13-44
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:25:13-44
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:29:13-33:29
+action#android.intent.action.MAIN
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/wangyuan4040163com/.android/build-cache/73891a9a8e15c486062818881e3e7832bcd9030d/output/AndroidManifest.xml:26:13-58
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:30:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:32:17-77
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:32:27-74
+activity#com.gestures.heart.push.Callback1
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:37:9-52
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:37:19-49
+activity#com.gestures.heart.push.Callback2
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:38:9-52
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:38:19-49
+service#com.avos.avoscloud.PushService
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:40:9-66
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:40:18-63
+receiver#com.avos.avoscloud.AVBroadcastReceiver
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:42:9-47:20
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:42:19-72
+intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.USER_PRESENT
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:43:13-46:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:44:17-79
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:44:25-76
+action#android.intent.action.USER_PRESENT
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:45:17-77
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:45:25-74
+receiver#com.gestures.heart.push.CustomReceiver
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:49:9-57:20
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:49:19-54
+intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE+com.avos.UPDATE_STATUS+com.pushdemo.action
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:50:13-56:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:53:17-79
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:53:25-76
+action#com.avos.UPDATE_STATUS
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:54:17-65
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:54:25-62
+action#com.pushdemo.action
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:55:17-62
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:55:25-59
+activity#com.gestures.heart.MainActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:60:9-63:52
+	android:screenOrientation
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:63:13-49
+	android:launchMode
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:62:13-44
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:61:13-41
+provider#com.gestures.heart.base.AlensProvider
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:65:9-69:43
+	android:authorities
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:67:13-57
+	android:multiprocess
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:69:13-40
+	android:exported
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:68:13-37
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:66:13-47
+activity#com.gestures.heart.login.LoginOrRegisterActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:71:9-74:52
+	android:screenOrientation
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:74:13-49
+	android:launchMode
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:73:13-44
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:72:13-58
+activity#com.gestures.heart.login.FindOrRegisterPWActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:75:9-78:52
+	android:screenOrientation
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:78:13-49
+	android:launchMode
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:77:13-44
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:76:13-59
+activity#com.gestures.heart.login.RegisterDataActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:79:9-82:52
+	android:screenOrientation
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:82:13-49
+	android:launchMode
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:81:13-44
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:80:13-55
+activity#com.gestures.heart.login.LoginPWActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:83:9-86:52
+	android:screenOrientation
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:86:13-49
+	android:launchMode
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:85:13-44
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:84:13-50
+activity#com.gestures.heart.home.LookMeActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:87:9-90:52
+	android:screenOrientation
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:90:13-49
+	android:launchMode
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:89:13-44
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:88:13-48
+activity#com.gestures.heart.settings.SettingsActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:91:9-94:52
+	android:screenOrientation
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:94:13-49
+	android:launchMode
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:93:13-44
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:92:13-54
+activity#com.gestures.heart.settings.AccountSafeActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:95:9-98:52
+	android:screenOrientation
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:98:13-49
+	android:launchMode
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:97:13-44
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:96:13-57
+activity#com.gestures.heart.settings.NoticeActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:99:9-102:52
+	android:screenOrientation
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:102:13-49
+	android:launchMode
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:101:13-44
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:100:13-52
+activity#com.gestures.heart.settings.BlackListActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:103:9-106:52
+	android:screenOrientation
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:106:13-49
+	android:launchMode
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:105:13-44
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:104:13-55
+activity#com.gestures.heart.settings.SwitchLanguageActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:107:9-110:52
+	android:screenOrientation
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:110:13-49
+	android:launchMode
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:109:13-44
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:108:13-60
+activity#com.gestures.heart.settings.FeedBackActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:111:9-114:52
+	android:screenOrientation
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:114:13-49
+	android:launchMode
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:113:13-44
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:112:13-54
+activity#com.gestures.heart.wallet.RechargeActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:115:9-118:52
+	android:screenOrientation
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:118:13-49
+	android:launchMode
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:117:13-44
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:116:13-52
+activity#com.gestures.heart.wallet.WithdrawActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:119:9-122:52
+	android:screenOrientation
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:122:13-49
+	android:launchMode
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:121:13-44
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:120:13-52
+activity#com.gestures.heart.wallet.IncomeActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:123:9-126:52
+	android:screenOrientation
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:126:13-49
+	android:launchMode
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:125:13-44
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:124:13-50
+activity#com.gestures.heart.wallet.AddAccountActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:127:9-130:52
+	android:screenOrientation
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:130:13-49
+	android:launchMode
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:129:13-44
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:128:13-54
+activity#com.gestures.heart.CommonActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:132:9-52
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:132:19-49
+activity#com.gestures.heart.settings.PersonalActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:134:9-137:52
+	android:screenOrientation
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:137:13-49
+	android:launchMode
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:136:13-44
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:135:13-54
+activity#com.gestures.heart.home.ShortVideoPlayActivity
+ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:139:9-142:52
+	android:screenOrientation
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:142:13-49
+	android:launchMode
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:141:13-44
+	android:name
+		ADDED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml:140:13-56
+uses-sdk
+INJECTED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.gestures.heart:module_base:1.0.0] /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
+MERGED from [com.gestures.heart:okhttp3:1.0.0] /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/okhttp3/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
+MERGED from [com.gestures.heart:banner:1.0.0] /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/banner/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
+MERGED from [com.gestures.heart:dialogui:1.0.0] /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:design:27.0.2] /Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/wangyuan4040163com/.android/build-cache/de479d2a47c304eff894b9e6cc99f4c8f5f4f14f/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/wangyuan4040163com/.android/build-cache/349ad19f1a6f3500e7f7ad0085bba26060795d1a/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.0.2] /Users/wangyuan4040163com/.android/build-cache/05ceb82b40c66c48d3687d3e31abac1ffa0e192a/output/AndroidManifest.xml:20:5-44
+MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34] /Users/wangyuan4040163com/.android/build-cache/2fad2674be4c6defd752b4d4b8b8d0f4fe0c05ba/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:recyclerview-v7:27.0.2] /Users/wangyuan4040163com/.android/build-cache/26296b783e29b6fba1e6fec0911d696a16e28fb0/output/AndroidManifest.xml:20:5-44
+MERGED from [jp.wasabeef:glide-transformations:2.0.1] /Users/wangyuan4040163com/.android/build-cache/9136af1892b8a884e09b440375acaef3bfa4dd2b/output/AndroidManifest.xml:8:5-10:41
+MERGED from [cn.leancloud.android:avoscloud-push:v3.16.4] /Users/wangyuan4040163com/.android/build-cache/f2bd38c628c69a123080f6d3a3b0031c309f0dc2/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:27.0.2] /Users/wangyuan4040163com/.android/build-cache/2bd16e78926e64bbddca83f9284e4490d86cef59/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /Users/wangyuan4040163com/.android/build-cache/c1e31cc9272efe69c9857a6c680e8ed4e35bd90d/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /Users/wangyuan4040163com/.android/build-cache/ed066962d129e4b23b994b85ab0a58b7659f0b78/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /Users/wangyuan4040163com/.android/build-cache/dc97c765603e2b4daf1c0b0fb5030d08d99890e3/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /Users/wangyuan4040163com/.android/build-cache/a222b557f414c57ba9b95a7f6b88e02b5b42d16c/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /Users/wangyuan4040163com/.android/build-cache/cdef3956b5083c37d5b3b89bc4c95448f4c3f062/output/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/wangyuan4040163com/.android/build-cache/ccee5245ba5a53426a052f6eb8cff971009fa554/output/AndroidManifest.xml:20:5-22:41
+	android:targetSdkVersion
+		INJECTED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/app/src/main/AndroidManifest.xml

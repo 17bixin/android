@@ -4,7 +4,15 @@
         "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
     },
     {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
         "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
     }
 ]

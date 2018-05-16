@@ -14,7 +14,7 @@
         android:gravity="center"
         android:singleLine="true"/>
 
-    <com.gestures.heart.base.view.tab.widget.MsgView
+    <com.gestures.heart.ui.tab.widget.MsgView
         android:id="@+id/rtv_msg_tip"
         xmlns:mv="http://schemas.android.com/apk/res-auto"
         android:layout_width="wrap_content"

@@ -1,11 +1,27 @@
 [
     {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/cdef3956b5083c37d5b3b89bc4c95448f4c3f062/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable-v21/avd_hide_password.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/drawable-v21/avd_hide_password.xml"
+    },
+    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
         "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/drawable-v21/abc_btn_colored_material.xml"
     },
     {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
         "source": "/Users/wangyuan4040163com/.android/build-cache/5eece42a09468946d315aae3f2758b503fe0e801/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
     },
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable-v21/design_password_eye.xml",
@@ -20,6 +36,18 @@
         "source": "/Users/wangyuan4040163com/.android/build-cache/c4098f8757030c21b952aec6b002c96b19d70194/output/res/drawable-v21/avd_hide_password.xml"
     },
     {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable-v21/avd_show_password.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/drawable-v21/avd_show_password.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/12db49800c209ca5be6e35082a8da97544647d00/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
         "source": "/Users/wangyuan4040163com/.android/build-cache/c4098f8757030c21b952aec6b002c96b19d70194/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
     },
@@ -30,5 +58,9 @@
     {
         "merged": "/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
         "source": "/Users/wangyuan4040163com/.android/build-cache/6d85c9f8b56dce98100dbfa36ab24eed0ffbddc5/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/res/merged/debug/drawable-v21/design_password_eye.xml",
+        "source": "/Users/wangyuan4040163com/.android/build-cache/048bc585e253af26c3a54fc0d2a22be71d2d47e2/output/res/drawable-v21/design_password_eye.xml"
     }
 ]

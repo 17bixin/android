@@ -1,16 +1,13 @@
 <resources>
     <string name="app_name">比心</string>
 
-    <string name="video_select">视频选择</string>
+    <string name="agree">比心用户协议</string>
 
-    <string name="video_crop">视频剪辑</string>
-    <string name="trimming_progress">视频正在生成~</string>
-    <string name="next_text">下一步</string>
+    <string name="account_safe">账号与安全</string>
 
-    <dimen name="fab_elevation">5dp</dimen>
-    <dimen name="fab_rise">3dp</dimen>
-    <integer name="fab_duration">100</integer>
+    <string name="mobile_bind">手机绑定</string>
+    <string name="certification">实名认证</string>
+    <string name="change_pw">修改密码</string>
 
-
-
+    <string name="exit_commit">再按一次退出</string>
 </resources>

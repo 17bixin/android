@@ -3,12 +3,39 @@
 
     <item
         is-multidex="false"
-        jar="/Users/wangyuan4040163com/GesturesHeart/app/libs/nama.jar"
+        jar="/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/dialogui/intermediates/bundles/default/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="26.0.2"
-        sha1="4434ab8a45a7906f52df11618b7365fa20eafa3a">
-        <dex dex="/Users/wangyuan4040163com/GesturesHeart/.gradle-build/app/intermediates/pre-dexed/debug/nama_a9ad51b60534a343c6c25facf068bd5a13b45c2c.jar" />
+        revision="27.0.2"
+        sha1="92ca4118db31d48322898de5cc5c6ea658012eac">
+        <dex dex="/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/pre-dexed/debug/classes_6096df8a5e89448cc2b77c30a4853a788e682c79.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/banner/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="49a0c8d0fca8118ac4f58e9cd770e159b7ac0697">
+        <dex dex="/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/pre-dexed/debug/classes_a1cbc60bb9bb28711324687a56fa679146de085b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/okhttp3/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="49d9ed5890f9be934da7b2bc48363df8a9946c60">
+        <dex dex="/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/pre-dexed/debug/classes_b5ad2df7401e1df4642cbbf1de3747a8d888d526.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/module_base/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="42c026073d78da1664bea2268b3e53542180ba66">
+        <dex dex="/Users/wangyuan4040163com/work/workspace_studio/GesturesHeart/.gradle-build/app/intermediates/pre-dexed/debug/classes_e7c0f94f225f2aeff16344ccd345e184f301ff7a.jar" />
     </item>
 
 </items>

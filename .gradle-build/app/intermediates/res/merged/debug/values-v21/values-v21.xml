@@ -227,17 +227,6 @@
     <style name="Base.Widget.AppCompat.Toolbar.Button.Navigation" parent="android:Widget.Material.Toolbar.Button.Navigation">
     </style>
     <style name="Base.Widget.Design.AppBarLayout" parent="Base.V21.Widget.Design.AppBarLayout"/>
-    <style name="GrantorNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-    </style>
-    <style name="GrantorNoDisplay" parent="GrantorNoActionBar">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowIsTranslucent">true</item>
-    </style>
     <style name="Platform.AppCompat" parent="Platform.V21.AppCompat"/>
     <style name="Platform.AppCompat.Light" parent="Platform.V21.AppCompat.Light"/>
     <style name="Platform.ThemeOverlay.AppCompat" parent="">
@@ -275,22 +264,6 @@
 
         <item name="android:buttonBarStyle">?attr/buttonBarStyle</item>
         <item name="android:buttonBarButtonStyle">?attr/buttonBarButtonStyle</item>
-    </style>
-    <style name="TextAppearance.AppCompat.Notification" parent="@android:style/TextAppearance.Material.Notification"/>
-    <style name="TextAppearance.AppCompat.Notification.Info" parent="@android:style/TextAppearance.Material.Notification.Info"/>
-    <style name="TextAppearance.AppCompat.Notification.Info.Media">
-        <item name="android:textColor">@color/secondary_text_default_material_dark</item>
-    </style>
-    <style name="TextAppearance.AppCompat.Notification.Media">
-        <item name="android:textColor">@color/secondary_text_default_material_dark</item>
-    </style>
-    <style name="TextAppearance.AppCompat.Notification.Time" parent="@android:style/TextAppearance.Material.Notification.Time"/>
-    <style name="TextAppearance.AppCompat.Notification.Time.Media">
-        <item name="android:textColor">@color/secondary_text_default_material_dark</item>
-    </style>
-    <style name="TextAppearance.AppCompat.Notification.Title" parent="@android:style/TextAppearance.Material.Notification.Title"/>
-    <style name="TextAppearance.AppCompat.Notification.Title.Media">
-        <item name="android:textColor">@color/primary_text_default_material_dark</item>
     </style>
     <style name="TextAppearance.Compat.Notification" parent="@android:style/TextAppearance.Material.Notification"/>
     <style name="TextAppearance.Compat.Notification.Info" parent="@android:style/TextAppearance.Material.Notification.Info"/>
